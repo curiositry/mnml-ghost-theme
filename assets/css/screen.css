@@ -811,7 +811,7 @@ body:not(.post-template) .post-title {
   font-weight: 300;
 }
 
-.post-content p:first-child:first-letter{
+.post-content > p:first-child:first-letter{
   float: left;
   color: orange;
   margin-right: .15em;
@@ -822,7 +822,7 @@ body:not(.post-template) .post-title {
   line-height: .52;
 }
 
-.post-content p:first-child:first-line{
+.post-content > p:first-child:first-line{
   -moz-font-feature-settings: "smcp=1";
   -ms-font-feature-settings: "smcp";
   -webkit-font-feature-settings: "smcp";
