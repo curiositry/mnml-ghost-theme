@@ -2,6 +2,8 @@
 
 Think of it as Casper, with class.
 
+### [LIVE DEMO!](http://mnml.herokuapp.com)
+
 Features:
 
   - Everything that makes Casper great, plus…

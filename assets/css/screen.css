@@ -812,18 +812,21 @@ body:not(.post-template) .post-title {
 }
 
 .post-content > p:first-child:first-letter{
-  float: left;
-  color: orange;
-  margin-right: .15em;
-  margin-top: 10px;
-  padding-top: 12px;
-  font-size: 7rem;
+  font-size:350%;
+  margin:11px 0 -5px 0;
+  padding:0 .1em 0 0;
+  height:.7em;
+  line-height:.85em;
+  float:left;
+  color:orange;
   font-weight: 900;
-  line-height: .52;
+  *line-height:1em; /* IE7 Only */
 }
+
 
 .post-content > p:first-child:first-line{
   -moz-font-feature-settings: "smcp=1";
+  -moz-font-feature-settings: "smcp";
   -ms-font-feature-settings: "smcp";
   -webkit-font-feature-settings: "smcp";
   -o-font-feature-settings: "smcp";
