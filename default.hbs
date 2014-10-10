@@ -17,7 +17,7 @@
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/prism.min.css"}}" />
-    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Fira+Sans:300,400,500,700,300i,400i,500i,700i">
+    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Source+Serif+Pro:400,700/Source+Sans+Pro:400,900,400i,900i/Alegreya:400i,700i">
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
@@ -27,9 +27,25 @@
     {{! Everything else gets inserted here }}
     {{{body}}}
 
-    <footer class="site-footer clearfix">
-         <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
-         <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+    <footer class="site-footer">
+      <a class="subscribe icon-feed" href="{{@blog.url}}/rss/"><span class="tooltip">Subscribe!</span></a>
+
+      <div class="inner">
+        <section>
+          <span class="print-data">
+            &copy; {{date format="YYYY"}}
+            <a href="{{@blog.url}}/">{{@blog.title}}</a>
+          </span>
+          <span> &bull; Proudly published with
+            <a href="https://ghost.org"><span class="icon-ghost zeta"></span></a>           </span>
+          <br>
+          <span>
+            <a href="http://github.com/omphalosskeptic/mnml">mnml</a>
+            theme by
+            <a href="http://omphalosskeptic.github.io">omphalosskeptic.</a>
+          </span>
+        </section>
+      </div>
     </footer>
 
     {{! Ghost outputs important scripts and data with this tag }}
@@ -39,6 +55,16 @@
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/prism.min.js"}}"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-55383286-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
 
 </body>
 </html>

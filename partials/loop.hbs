@@ -7,16 +7,18 @@
 {{#foreach posts}}
 <article class="{{post_class}}">
     <header class="post-header">
-        <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+        <h2 class="post-title gamma"><a href="{{url}}">{{{title}}}</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>{{excerpt words="30"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
+        <p>{{excerpt words="30"}} <span style="color:#ccc;">…</span><a class="read-more" href="{{url}}"> Read more &raquo;</a></p>
     </section>
     <footer class="post-meta">
-        {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="Author image" nopin="nopin" />{{/if}}
-        {{author}}
-        {{tags prefix=" on "}} 
-        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> 
+        <small>
+<!--        {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="Author image" nopin="nopin" />{{/if}}-->
+        Published by {{author}} on
+        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="Do MMMM YYYY"}}</time> &bull;
+        {{tags prefix=" Tagged: "}}
+        </small>
     </footer>
 </article>
 {{/foreach}}
