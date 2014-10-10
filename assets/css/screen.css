@@ -336,7 +336,7 @@ blockquote cite a { font-weight: normal; }
   top: 30px;
   right:10px;
   color:orange;
-  line-height: 1;
+  line-height: 0;
 }
 
 aside{
@@ -536,7 +536,8 @@ margin on the iframe, cause it breaks stuff. */
 /* Makes for a nice small, responsive image that floats right*/
 .thumb{
   width: 100%;
-  max-width:250px;
+  max-width:200px;
+  margin: .5em !important;
   float:right;
 }
 
