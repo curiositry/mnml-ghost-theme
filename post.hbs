@@ -3,12 +3,12 @@
 {{! The comment above "< default" means - insert everything in this file into
     the {body} of the default.hbs template, which contains our header/footer. }}
 
-<nav class="main-nav clearfix">
+<nav class="main-nav main-nav--post clearfix">
 <!--    <a class="back-button icon-arrow-left" href="{{@blog.url}}">Home</a>-->
         <div class="main-header-content inner ">
            <a href="{{@blog.url}}">
 
-            <h3 style="position:relative;right:1em;color:#555;"><span style="color:#ccc;font-weight:400;position:relative;bottom:2px;">← </span>{{@blog.title}}</h3>
+            <h3><span class="back-arrow">← </span>{{@blog.title}}</h3>
             </a>
         </div>
 </nav>
@@ -21,9 +21,11 @@
 
         <header class="post-header">
             <h1 class="post-title beta">{{title}}</h1>
+<!--
             <section class="post-meta">
-                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">Published on {{date format="DD MMMM YYYY"}}</time> — {{tags prefix=" tagged "}}
+                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">Published on {{date format="MMMM Do YYYY"}}</time>{{tags prefix=" &bull; tagged "}}
             </section>
+-->
         </header>
 
         <section class="post-content">
@@ -37,7 +39,7 @@
 
             {{#if image}}
             <figure class="author-image">
-                <A class="img" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></a>
+                <a class="img" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></a>
             </figure>
             {{/if}}
 
