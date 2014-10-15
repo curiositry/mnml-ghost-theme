@@ -351,7 +351,7 @@ aside{
   border:1px solid #eee;
 }
 
-aside:before{
+aside.note:before{
   position: relative;
   display: inline;
   color:#ccc;
@@ -676,6 +676,49 @@ a.btn{
     width: auto;
 }
 
+.back-button, .subscribe-button{
+   -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: .4em .3em .3em .3em;
+    border: transparent 1px solid;
+    color: #9EABB3;
+  font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 3px;
+    transition: all ease 0.3s;
+}
+
+.back-button {
+  float: left;
+}
+.back-button:before {
+    position: relative;
+    bottom: -2px;
+    margin-right: 8px;
+}
+
+.subscribe-button {
+
+    float: right;
+}
+.subscribe-button:before {
+    margin-right: 8px;
+    position: relative;
+    bottom: -2px;
+}
+
+/*
+
+ Add a border to the buttons on hover
+.back-button:hover,
+.subscribe-button:hover {
+    border-color: #bfc8cd;
+    color: #9EABB3;
+}
+*/
 
 /* The details of your blog. Defined in ghost/settings/ */
 .page-title {
