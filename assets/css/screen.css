@@ -198,15 +198,18 @@ main-nav a,
 
 }
 
-h1, h2, h3,
-h4, h5, h6,
+h3, h4, h5, h6,
+.home-template h2,
+.archive-template h2,
 .older-posts, .newer-posts,
 .back-button, .subscribe-button{
   text-transform: uppercase;
   font-weight: 900;
 }
 
-h1,h2,h3{
+h3,
+.home-template h2,
+.archive-template h2{
   letter-spacing: .05em !important;
 }
 
