@@ -261,7 +261,7 @@ hr{
   display: block;
   height: 1px;
   border: 0;
-  border-top: #EFEFEF 1px double;
+  border-top: #e0e0e0 1px double;
   margin: 3.2em 0;
   padding: 0;
   text-align: center;
@@ -273,9 +273,9 @@ hr:after {
     content: "";
     width: 7px;
     height: 7px;
-    border: #E7EEF2 1px solid;
+    border: #e0e0e0 1px solid;
     position: relative;
-    bottom: .25em;
+    bottom: .2em;
     left: 50%;
     margin-left: -5px;
     background: #fdfdfd;
@@ -1576,11 +1576,9 @@ padding-left: 1.1em;
 
   q:after {content: " (" attr(cite) ")"}
 
-/*
-// Uncomment for an even leaner print style
+/*// Uncomment for an even leaner print style*/
   .post-footer,
   .site-footer,
-*/
   .site-footer span:not(.print-data),
   .subscribe,
   .share{
