@@ -1,11 +1,16 @@
 {{!< default}}
 
-{{! This is a page template. A page outputs content just like any other post, and has all the same
-    attributes by default, but you can also customise it to behave differently if you prefer. }}
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
 
-<nav class="main-nav clearfix">
-    <a class="back-button icon-arrow-left" href="{{@blog.url}}">Home</a>
-    <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
+<nav class="main-nav main-nav--post clearfix">
+<!--    <a class="back-button icon-arrow-left" href="{{@blog.url}}">Home</a>-->
+        <div class="main-header-content inner ">
+           <a href="{{@blog.url}}">
+
+            <h3><span class="back-arrow">← </span>{{@blog.title}}</h3>
+            </a>
+        </div>
 </nav>
 
 <main class="content" role="main">
@@ -14,7 +19,12 @@
     {{! Everything inside the #post tags pulls data from the post }}
     {{#post}}
 
-        <h1 class="post-title">{{title}}</h1>
+        <header class="post-header">
+            <h1 class="post-title beta">{{title}}</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">Published on {{date format="MMMM Do YYYY"}}</time>{{tags prefix=" &bull; tagged "}}
+            </section>
+        </header>
 
         <section class="post-content">
             {{content}}
