@@ -170,6 +170,11 @@ body {
     color: #333;
     font-size:21px;
     background: #fdfdfd;
+
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
 }
 
 ::-moz-selection {
@@ -933,7 +938,6 @@ a.btn{
     max-width: 100%;
     height: auto;
     margin: 0 auto;
-    padding: 0.6em 0;
 }
 
 /* Break out larger images to be wider than the main text column
@@ -941,7 +945,8 @@ a.btn{
 .post-content .full-img {
     width: 126%;
     max-width: none;
-    margin: 0 -13%;
+    margin-bottom: 2em !important;
+    margin-top: 2em !important;
 }
 
 /* The author credit area after the post */
@@ -1437,6 +1442,12 @@ top: -35px;
         max-height: 20%;
         min-height: 160px;
         padding: 10% 0;
+    }
+
+    .thumb{
+      width:100%;
+      text-align: center;
+      margin: 0 auto;
     }
 
     .main-nav {
