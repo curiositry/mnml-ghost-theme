@@ -90,7 +90,7 @@ Github ........ https://github.com/typeplate/bower
 AUTHORS ....... Dennis Gaebel (@gryghostvisuals) & Zachary Kain (@zakkain)
 LICENSE ....... Creative Commmons Attribution 3.0 (http://creativecommons.org/licenses/by/3.0)
 LICENSE URL ... https://github.com/typeplate/bower/blob/master/license.txt
-*/@font-face{font-family:Ampersand;src:local("Georgia"),local("Garamond"),local("Palatino"),local("Book Antiqua");unicode-range:U+0026}@font-face{font-family:Ampersand;src:local("Georgia");unicode-range:U+270C}.ampersand{font-family:Ampersand,Verdana,sans-serif}.breakword{word-wrap:break-word}.normal-wrap{word-wrap:normal}.inherit-wrap{word-wrap:auto}.drop-cap:first-letter{float:left;margin:auto .25em auto auto;padding:inherit;font-size:4em;font-family:inherit;line-height:1;text-indent:0;background:0 0;color:inherit}p+.drop-cap{text-indent:0;margin-top:0}html{font:400 112.5%/1.65 serif}body{-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;-o-hyphens:auto;hyphens:auto;word-wrap:break-word;color:#444}small{font-size:65%}h1,h2,h3,h4,h5,h6{line-height:1;margin-top:0;text-rendering:optimizeLegibility;color:#222}.tera{font-size:117px;font-size:6.5rem;margin-bottom:.25385rem}.giga{font-size:90px;font-size:5rem;margin-bottom:.33rem}.mega{font-size:72px;font-size:4rem;margin-bottom:.4125rem}.alpha,h1{font-size:60px;font-size:3.33333rem;margin-bottom:.495rem}.beta,h2{font-size:48px;font-size:2.6667rem;margin-bottom:.61875rem}.gamma,h3{font-size:36px;font-size:2rem;margin-bottom:.825rem}.delta,h4{font-size:24px;font-size:1.3333333333333333rem;margin-bottom:1.2375rem}.epsilon,h5{font-size:21px;font-size:1.16667rem;margin-bottom:1.41429rem}.zeta,h6{font-size:18px;font-size:1rem;margin-bottom:1.65rem}p{margin:auto auto 1.5em}p+p{text-indent:1.5em;margin-top:-1.5em}abbr,acronym,blockquote,code,dir,kbd,listing,plaintext,q,samp,tt,var,xmp{-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;-o-hyphens:none;hyphens:none}pre code{word-wrap:normal;white-space:-moz-pre-wrap;white-space:pre-wrap}pre{white-space:pre}code{white-space:pre;font-family:monospace}abbr{font-variant:small-caps;font-weight:600;text-transform:lowercase;color:gray}abbr[title]:hover{cursor:help}.lining dd,.lining dt{display:inline;margin:0}.lining dd+dt:before,.lining dt+dt:before{content:"\A";white-space:pre}.lining dd+dd:before{content:", "}.lining dd:before{content:": ";margin-left:-.2em}.dictionary-style dt{display:inline;counter-reset:definitions}.dictionary-style dt+dt:before{content:", ";margin-left:-.2em}.dictionary-style dd{display:block;counter-increment:definitions}.dictionary-style dd:before{content:counter(definitions,decimal) ". "}.blockquote p:last-of-type{margin-bottom:-.825em}.blockquote+figcaption{display:block;font-size:inherit;text-align:right}.blockquote+figcaption:before{content:"-"}.pull-quote{position:relative;padding:1em}.pull-quote:after,.pull-quote:before{height:1em;opacity:.15;position:absolute;font-size:4em;color:#dc976e}.pull-quote:before{content:'“';top:0;left:0}.pull-quote:after{content:'”';bottom:0;right:0}
+*/@font-face{font-family:Ampersand;src:local("Georgia"),local("Garamond"),local("Palatino"),local("Book Antiqua");unicode-range:U+0026}@font-face{font-family:Ampersand;src:local("Georgia");unicode-range:U+270C}.ampersand{font-family:Ampersand,Verdana,sans-serif}.breakword{word-wrap:break-word}.normal-wrap{word-wrap:normal}.inherit-wrap{word-wrap:auto}.drop-cap:first-letter{float:left;margin:auto .25em auto auto;padding:inherit;font-size:4em;font-family:inherit;line-height:1;text-indent:0;background:0 0;color:inherit}p+.drop-cap{text-indent:0;margin-top:0}html{font:400 112.5%/1.65 serif}body{-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;-o-hyphens:auto;hyphens:auto;word-wrap:break-word;color:  #444}small{font-size:65%}h1,h2,h3,h4,h5,h6{line-height:1;margin-top:0;text-rendering:optimizeLegibility;color:  #222}.tera{font-size:117px;font-size:6.5rem;margin-bottom:.25385rem}.giga{font-size:90px;font-size:5rem;margin-bottom:.33rem}.mega{font-size:72px;font-size:4rem;margin-bottom:.4125rem}.alpha,h1{font-size:60px;font-size:3.33333rem;margin-bottom:.495rem}.beta,h2{font-size:48px;font-size:2.6667rem;margin-bottom:.61875rem}.gamma,h3{font-size:36px;font-size:2rem;margin-bottom:.825rem}.delta,h4{font-size:24px;font-size:1.3333333333333333rem;margin-bottom:1.2375rem}.epsilon,h5{font-size:21px;font-size:1.16667rem;margin-bottom:1.41429rem}.zeta,h6{font-size:18px;font-size:1rem;margin-bottom:1.65rem}p{margin:auto auto 1.5em}p+p{text-indent:1.5em;margin-top:-1.5em}abbr,acronym,blockquote,code,dir,kbd,listing,plaintext,q,samp,tt,var,xmp{-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;-o-hyphens:none;hyphens:none}pre code{word-wrap:normal;white-space:-moz-pre-wrap;white-space:pre-wrap}pre{white-space:pre}code{white-space:pre;font-family:monospace}abbr{font-variant:small-caps;font-weight:600;text-transform:lowercase;color:gray}abbr[title]:hover{cursor:help}.lining dd,.lining dt{display:inline;margin:0}.lining dd+dt:before,.lining dt+dt:before{content:"\A";white-space:pre}.lining dd+dd:before{content:", "}.lining dd:before{content:": ";margin-left:-.2em}.dictionary-style dt{display:inline;counter-reset:definitions}.dictionary-style dt+dt:before{content:", ";margin-left:-.2em}.dictionary-style dd{display:block;counter-increment:definitions}.dictionary-style dd:before{content:counter(definitions,decimal) ". "}.blockquote p:last-of-type{margin-bottom:-.825em}.blockquote+figcaption{display:block;font-size:inherit;text-align:right}.blockquote+figcaption:before{content:"-"}.pull-quote{position:relative;padding:1em}.pull-quote:after,.pull-quote:before{height:1em;opacity:.15;position:absolute;font-size:4em;color:  #dc976e}.pull-quote:before{content:'“';top:0;left:0}.pull-quote:after{content:'”';bottom:0;right:0}
 
 
 /* ==========================================================================
@@ -306,7 +306,7 @@ blockquote p {
 blockquote small {
     display: inline-block;
     margin: 0.8em 0 0.8em 1.5em;
-    font-size: 0.9em;
+    font-size:.857em;
     color: #CCC;
 }
 
@@ -354,7 +354,7 @@ aside{
 aside.note:before{
   position: relative;
   display: inline;
-  color:#ccc;
+  color:  #ccc;
   top:-.05em;
   left:-.45em;
   content: "*";
@@ -586,7 +586,7 @@ margin on the iframe, cause it breaks stuff. */
   margin: .5em;
   background-color: moccasin;
   box-shadow: 1px 4px 0 1px #dd4814;
-  color:#333;
+  color:  #333;
   -webkit-transition: .1s;
   -o-transition: .1s;
   transition: .1s;
@@ -645,7 +645,7 @@ a.btn{
 .main-nav--post h3{
   position:relative;
   right:1em;
-  color:#ccc;
+  color:  #ccc;
 }
 
 .main-nav--post .back-arrow{
@@ -740,7 +740,7 @@ a.btn{
 .post {
     position: relative;
     width: 80%;
-    max-width: 780px;
+    max-width: 860px;
     margin: 2rem auto;
     padding-bottom: 2rem;
     border-bottom: #EBF2F6 1px solid;
@@ -776,6 +776,17 @@ a.btn{
     margin: 0;
 }
 
+.post-thumbnail{
+  display: inline-block;
+  float:left;
+  max-width:250px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+
+.post-thumbnail img{
+  max-width:250px;
+}
 
 .post-content > p:first-child:first-letter{
   font-size:5rem;
@@ -812,6 +823,7 @@ a.btn{
     display: block;
     margin: .5em 0 0 0;
     color: #9EABB3;
+    font-size:.857em;
 }
 
 .author-thumb {
@@ -988,13 +1000,25 @@ a.btn{
 .post-footer .share a {
     display: inline-block;
     margin: 1rem 1.6rem 1.6rem 0;
-    color: #BBC7CC;
     text-decoration: none;
 }
 
-.post-footer .share a:hover {
-    color: #50585D;
+.share a:hover{
+  color:orange;
 }
+
+.icon-google-plus{
+  color: #d34836;
+}
+
+.icon-twitter{
+  color: #00aced;
+}
+
+.icon-facebook{
+  color: #3b5998;
+}
+
 
 
 
@@ -1216,21 +1240,21 @@ a.btn{
 }
 
 .site-footer a{
-  color:#999;
+  color:  #999;
   text-decoration: none;
 }
 
 /* The subscribe icon on the footer */
 .subscribe {
-  width: 28px;
-  height: 28px;
+  width: 50px;
+  height: 50px;
   position: absolute;
-  top: -14px;
+  top: -25px;
   left: 50%;
-  margin-left: -15px;
+  margin-left: -25px;
   border: #EBF2F6 1px solid;
   text-align: center;
-  line-height: 2.4rem;
+  line-height: 1rem;
   border-radius: 50px;
   background: #FFF;
   transition: box-shadow 0.5s;
@@ -1238,11 +1262,11 @@ a.btn{
 
 /* The RSS icon, inserted via icon font */
 .subscribe:before {
-  color: #D2DEE3;
-  font-size: 10px;
+  color: orange;
+  font-size: 24px;
   position: absolute;
-  top: 9px;
-  left: 9px;
+  top: 13px;
+  left: 13px;
   font-weight: 700;
   transition: color 0.5s ease;
 }
@@ -1254,7 +1278,7 @@ a.btn{
 }
 
 .subscribe:hover:before {
-  color: #50585D;
+  color: #dd4814;
 }
 
 /* CSS tooltip saying "Subscribe!" - initially hidden */
@@ -1263,11 +1287,11 @@ a.btn{
   display: inline-block;
   padding: 4px 8px 5px 8px;
   position:absolute;
-  top: -35px;
-  left: -38px;
+  top: -36px;
+  left: -16px;
   color: rgba(255,255,255,0.9);
-  font-size: 1.1rem;
-  line-height: 1em;
+  font-size: 14px;
+  line-height: 14px;
   text-align: center;
   background: #50585D;
   border-radius: 20px;
@@ -1293,7 +1317,7 @@ a.btn{
 /* On hover, show the tooltip! */
 .subscribe:hover .tooltip {
 opacity: 1;
-top: -33px;
+top: -35px;
 }
 
 
@@ -1312,7 +1336,7 @@ top: -33px;
     .post,
     .inner,
     .pagination {
-        max-width: 710px;
+        max-width: 860px;
     }
 
     h1, h2, h3,
@@ -1372,6 +1396,10 @@ top: -33px;
     .author-meta span {
         display: block;
         margin: 1.5rem 0;
+    }
+
+    .post-thumbnail{
+      display: none;
     }
 
 }
@@ -1465,6 +1493,9 @@ padding-left: 1.1em;
         margin-top: 0;
     }
 
+
+
+
     .post-content img {
         padding: 0;
     }
@@ -1538,6 +1569,7 @@ padding-left: 1.1em;
       -webkit-margin-before: 0 !important;
       -webkit-margin-after:-.1em !important;
     }
+
 
 }
 
