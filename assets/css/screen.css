@@ -199,17 +199,13 @@ main-nav a,
 }
 
 h3, h4, h5, h6,
-.home-template h2,
-.archive-template h2,
 .older-posts, .newer-posts,
 .back-button, .subscribe-button{
   text-transform: uppercase;
   font-weight: 900;
 }
 
-h3,
-.home-template h2,
-.archive-template h2{
+h3{
   letter-spacing: .05em !important;
 }
 
@@ -739,6 +735,8 @@ a.btn{
 }
 
 .page-description {
+  text-transform: uppercase;
+  letter-spacing: .05em;
   color:slategray;
   margin: 0;
   letter-spacing: 0;
@@ -1312,6 +1310,11 @@ a.btn{
   border-radius: 20px;
   box-shadow: 0 1px 4px rgba(0,0,0,0.1);
   transition: opacity 0.3s ease, top 0.3s ease;
+
+  -webkit-hyphens: none;
+     -moz-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
 }
 
 /* The little chiclet arrow under the tooltip, pointing down */
