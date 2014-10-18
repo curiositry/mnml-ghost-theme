@@ -1445,7 +1445,7 @@ top: -35px;
     }
 
     .thumb{
-      width:100%;
+      max-width:100%;
       text-align: center;
       margin: 0 auto;
     }
