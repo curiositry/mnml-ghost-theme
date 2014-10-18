@@ -740,7 +740,7 @@ a.btn{
 .post {
     position: relative;
     width: 80%;
-    max-width: 860px;
+    max-width: 780px;
     margin: 2rem auto;
     padding-bottom: 2rem;
     border-bottom: #EBF2F6 1px solid;
@@ -774,6 +774,11 @@ a.btn{
 
 .post-excerpt p {
     margin: 0;
+}
+
+.home-template .post,
+.archive-template .post{
+  max-width:850px;
 }
 
 .post-thumbnail{
@@ -1336,7 +1341,16 @@ top: -35px;
     .post,
     .inner,
     .pagination {
-        max-width: 860px;
+        max-width: 710px;
+    }
+
+    .home-template .post,
+    .home-template .inner,
+    .home-template .pagination,
+    .archive-template .post,
+    .archive-template .inner,
+    .archive-template .pagination{
+        max-width: 850px;
     }
 
     h1, h2, h3,
