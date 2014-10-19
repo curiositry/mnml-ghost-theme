@@ -540,9 +540,14 @@ margin on the iframe, cause it breaks stuff. */
 /* Makes for a nice small, responsive image that floats right*/
 .thumb{
   width: 100%;
-  max-width:200px;
+  max-width:225px;
   margin: .5em !important;
   float:right;
+}
+
+.thumb img.full-img{
+  margin: 0 auto !important;
+  width: 100%;
 }
 
 .btn, button, input[type="button"]{
@@ -948,7 +953,7 @@ a.btn{
     width: 126%;
     max-width: none;
     margin: 0 -13%;
-  margin-bottom: 2em !important;
+    margin-bottom: 2em !important;
     margin-top: 2em !important;
 }
 
