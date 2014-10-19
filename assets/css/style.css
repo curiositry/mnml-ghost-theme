@@ -1654,6 +1654,7 @@ padding-left: 1.1em;
   .site-footer,
   .site-footer span:not(.print-data),
   .subscribe,
+  .hr:after,
   .share{
     display: none;
   }
