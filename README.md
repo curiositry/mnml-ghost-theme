@@ -13,7 +13,7 @@ Features:
   - Blazingly fast [Brick](http://brick.im) webfonts
   - Cross-browser drop-capitals
   - Attractive Pullquotes
-- Responsive `<aside>` tags for intterupting yourself
+- Responsive `<aside>` tags for interrupting yourself
 - Prism.js syntax highlighting
 - Better horozontal rules
 - `.thumb` class for inline responsive thumbnails
