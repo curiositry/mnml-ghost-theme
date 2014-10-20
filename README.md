@@ -2,7 +2,7 @@
 
 ### See mnml in the wild!
 - [Autodidacts.io](http://autodidacts.io) almost always runs the latest version (what I made mnml for)
-- [mnml.herokuapp.com](http://mnml.herouapp.com) Site for the theme. Runs latest official *release* or newer
+- [mnml.herokuapp.com](http://mnml.herokuapp.com) Site for the theme. Runs latest official *release* or newer
 
 Features:
 
