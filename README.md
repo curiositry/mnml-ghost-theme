@@ -1,5 +1,7 @@
 # Mnml — a Typographically Tasteful [Ghost](http://github.com/tryghost/ghost/) Blog Theme
 
+Mnml is a beautiful, responsive, content-focused theme with great typography. The use of a type-scale, responsive typography, and carefully set line provide an optimal reading experience. Mnml also features post thumbnails on the homepage, an elegant print stylesheet, code syntax highlighting, and more.
+
 ### See mnml in the wild!
 - [Autodidacts.io](http://autodidacts.io) almost always runs the latest version (what I made mnml for)
 - [mnml.herokuapp.com](http://mnml.herokuapp.com) Site for the theme. Runs latest official *release* or newer
