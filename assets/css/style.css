@@ -833,6 +833,11 @@ a.btn{
     text-decoration: none;
 }
 
+.read-more span:before{
+  content: "read more ";
+
+}
+
 .post-meta {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
     font-weight: 400;
@@ -917,6 +922,7 @@ a.btn{
 }
 
 .post-template .post-meta{
+  font-weight: 300;
   margin: 1em 0;
 }
 
