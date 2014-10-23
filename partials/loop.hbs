@@ -12,8 +12,18 @@
     </header>
 
     {{#if image}}
-    <section class="post-thumbnail">
-      <img src="http://firesize.com/x150/g_center/{{image}}" alt="{{title}}" />
+    <section class="post-thumbnail" id="{{url}}-post-thumbnail">
+      <script>
+      function homepagePostThumbnail (imgUrl) {
+          if (imgUrl.contains("http://")) {
+              fireSizeUrl = "http://firesize.com/x150/g_center/";
+          } else {
+              fireSizeUrl = "http://firesize.com/x150/g_center/{{@blog.url}}";
+          }
+          document.getElementById('{{url}}-post-thumbnail').innerHTML = '<img src="'+fireSizeUrl+imgUrl+'" alt="{{title}}" />';
+      };
+      homepagePostThumbnail("{{image}}");
+    </script>
     </section>
     {{/if}}
 
