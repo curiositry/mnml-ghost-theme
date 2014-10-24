@@ -28,24 +28,24 @@
     {{{body}}}
 
     <footer class="site-footer">
-      <a class="subscribe icon-feed" href="{{@blog.url}}/rss/"><span class="tooltip">Subscribe!</span></a>
-
-      <div class="inner">
-        <section>
-          <span class="print-data">
-            &copy; {{date format="YYYY"}}
-            <a href="{{@blog.url}}/">{{@blog.title}}</a>
-          </span>
-          <span> &bull; Proudly published with
-            <a href="https://ghost.org"><span class="icon-ghost zeta"></span></a>           </span>
-          <br>
-          <span>
-            <a href="http://github.com/omphalosskeptic/mnml-ghost-theme">mnml</a>
-            theme by
-            <a href="http://omphalosskeptic.github.io">omphalosskeptic</a>
-          </span>
-        </section>
-      </div>
+      <a class="subscribe icon-feed" href="{{@blog.url}}/rss/">
+       <span class="tooltip">Subscribe!</span>
+      </a>
+      <section>
+        <span class="print-data copyright-notice">
+          &copy; {{date format="YYYY"}}
+          <a href="{{@blog.url}}/">{{@blog.title}}</a>
+          &nbsp;&bull;&nbsp;
+        </span>
+        <span>
+          <a href="http://github.com/omphalosskeptic/mnml-ghost-theme">mnml</a>
+          theme by
+          <a href="http://omphalosskeptic.github.io">omphalosskeptic</a>
+        </span>
+        &nbsp;&bull;&nbsp;
+        <span>Proudly published with
+          <a href="https://ghost.org"><span class="icon-ghost zeta"></span></a>             </span>
+      </section>
     </footer>
 
     {{! Ghost outputs important scripts and data with this tag }}
