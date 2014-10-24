@@ -22,7 +22,7 @@
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 </head>
-<body class="{{body_class}}">
+<body class="{{body_class}}" id="body">
 
     {{! Everything else gets inserted here }}
     {{{body}}}
@@ -47,6 +47,11 @@
           <a href="https://ghost.org"><span class="icon-ghost zeta"></span></a>             </span>
       </section>
     </footer>
+
+    <!--
+    This generates a handsome modal menu and hamburger icon. If you want to use it, edit menu.hbs and add your links (line ~146), then remove the ! from this helper to activate it
+    -->
+    {{!>menu}}
 
     {{! Ghost outputs important scripts and data with this tag }}
     {{ghost_foot}}

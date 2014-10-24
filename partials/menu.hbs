@@ -1,0 +1,254 @@
+<style>
+/*
+  Modal Overlay
+*/
+.modal-overlay {
+  background: rgba(0,0,0,.5);
+  height: 100%;
+  left: 0;
+  display: flex;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  transition: opacity .2s;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  text-align: center;
+}
+
+.modal-overlay[aria-hidden="true"] {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-overlay[aria-hidden="false"] {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+
+/*
+  Modal Content Area
+*/
+.modal-content {
+  background:#fdfdfd;
+  margin: auto;
+  overflow: auto;
+  overflow-x: hidden;
+  padding: 1.5em;
+  box-sizing: border-box;
+  position: relative;
+  transform: scale(.8);
+  transition: transform .3s;
+  width: 90%;
+  height: 90%;
+  color:slategray;
+}
+
+.modal-overlay[aria-hidden="false"] .modal-content {
+  transform: scale(1);
+}
+
+/*
+  General Modal Content
+*/
+#modal_title {
+  margin-top: 0;
+  font-family: "Alegreya", Georgia, serif;
+  font-style: italic;
+  color:slategray;
+}
+
+/*
+  Close Modal Button
+*/
+.btn-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 2.5em;
+  font-weight: 400;
+  line-height: .5em;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top:0;
+  z-index: 2;
+}
+
+
+/* Hamburger Menu Icon */
+
+.menu-hamburger,
+.menu-hamburger:hover,
+.btn-close,
+.btn-close:hover{
+  color:slategray;
+  background: none;
+  border:none;
+  box-shadow: none;
+}
+
+.menu-hamburger {
+  position: absolute;
+  top:0;
+  right:1.5em;
+  padding: 0;
+}
+
+.menu-hamburger:before {
+  content: "";
+  position: absolute;
+  top: 0.25em;
+  left: 0;
+  width: 1em;
+  height: 0.125em;
+  border-top: 0.375em double #dd4814;
+  border-bottom: 0.125em solid #dd4814;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+.menu-hamburger:hover:before{
+  border-top: 0.375em double orange;
+  border-bottom: 0.125em solid orange;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+/* Navigation styles in Menu */
+  .menu li{
+    list-style-type:none;
+    font-family: Source Sans Pro;
+    font-weight: 900;
+  }
+  .menu a{
+    text-decoration: none;
+  }
+
+</style>
+
+    <button class="menu-hamburger" type="button" id="modal_open"></button>
+
+    <div class="menu modal-overlay" id="modal_window"
+             aria-hidden="true" role="dialog"
+             aria-labelledby="Menu popup">
+      <div class="modal-content" id="modal_holder" role="document">
+
+        <h1 id="modal_title">Menu</h1>
+
+           <hr style="width:50%" class="m0a"><br>
+
+          <nav role="navigation" class="beta">
+            <li><a href="{{@blog.url}}">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="contact">Contact</a></li>
+          </nav>
+<!--          <hr style="width:50%" class="m0a">-->
+
+        <button class="btn-close" id="modal_close" type="button" aria-label="close">
+          &times;
+        </button>
+
+      </div> <!-- end .modal-content -->
+    </div> <!-- end .modal-overlay -->
+
+
+
+
+<script>
+// helper function to place modal window as the first child
+// of the #page node
+var m = document.getElementById('modal_window'),
+    p = document.getElementById('body');
+
+function swap () {
+  p.parentNode.insertBefore(m, p);
+}
+
+swap();
+
+
+// modal window
+(function() {
+
+  'use strict';
+
+  // list out the vars
+  var mOverlay = getId('modal_window'),
+      mOpen = getId('modal_open'),
+      mClose = getId('modal_close'),
+      modal = getId('modal_holder'),
+      allNodes = document.querySelectorAll("*"),
+      modalOpen = false,
+      lastFocus,
+      i;
+
+
+  // Let's cut down on what we need to type to get an ID
+  function getId ( id ) {
+    return document.getElementById(id);
+  }
+
+  // Let's open the modal
+  function modalShow () {
+    lastFocus = document.activeElement;
+    mOverlay.setAttribute('aria-hidden', 'false');
+    modalOpen = true;
+    modal.setAttribute('tabindex', '0');
+    modal.focus();
+  }
+
+
+  // binds to both the button click and the escape key to close the modal window
+  // but only if modalOpen is set to true
+  function modalClose ( event ) {
+    if (modalOpen && ( !event.keyCode || event.keyCode === 27 ) ) {
+      mOverlay.setAttribute('aria-hidden', 'true');
+      modal.setAttribute('tabindex', '-1');
+      modalOpen = false;
+      lastFocus.focus();
+    }
+  }
+
+
+  // Restrict focus to the modal window when it's open.
+  // Tabbing will just loop through the whole modal.
+  // Shift + Tab will allow backup to the top of the modal,
+  // and then stop.
+  function focusRestrict ( event ) {
+    if ( modalOpen && !modal.contains( event.target ) ) {
+      event.stopPropagation();
+      modal.focus();
+    }
+  }
+
+
+  // Close modal window by clicking on the overlay
+  mOverlay.addEventListener('click', function( e ) {
+    if (e.target == modal.parentNode) {
+       modalClose( e );
+     }
+  }, false);
+
+
+  // open modal by btn click/hit
+  mOpen.addEventListener('click', modalShow);
+
+  // close modal by btn click/hit
+  mClose.addEventListener('click', modalClose);
+
+  // close modal by keydown, but only if modal is open
+  document.addEventListener('keydown', modalClose);
+
+  // restrict tab focus on elements only inside modal window
+  for (i = 0; i < allNodes.length; i++) {
+    allNodes.item(i).addEventListener('focus', focusRestrict);
+  }
+
+})();
+
+</script>
