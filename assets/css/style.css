@@ -850,11 +850,9 @@ a.btn{
 
 .post-meta {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
-    font-weight: 400;
     display: block;
     margin: .5em 0 0 0;
     color: #9EABB3;
-    font-size:.857em;
 }
 
 .author-thumb {
@@ -1520,10 +1518,6 @@ padding-left: 1.1em;
       margin-left: 16px;
       margin-right: 16px;
       padding-bottom: 2rem;
-  }
-
-  .post-date {
-      display: none;
   }
 
   .post-template .post-header {
