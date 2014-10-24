@@ -14,7 +14,14 @@
     {{#if image}}
     <section class="post-thumbnail" id="{{url}}-post-thumbnail">
       <img src="{{image}}" alt="{{title}}" />
+
       <script>
+      if (!String.prototype.contains) {
+        String.prototype.contains = function(s) {
+          return this.indexOf(s) > -1;
+        }
+      }
+
       function homepagePostThumbnail (imgUrl) {
           if (!imgUrl.contains("http://") && !imgUrl.contains("https://")) {
             fireSizeUrl = "http://firesize.com/x150/g_center/{{@blog.url}}";
@@ -24,7 +31,8 @@
           document.getElementById('{{url}}-post-thumbnail').innerHTML = '<img src="'+fireSizeUrl+imgUrl+'" alt="{{title}}" />';
       };
       homepagePostThumbnail("{{image}}");
-    </script>
+      </script>
+
     </section>
     {{/if}}
 
