@@ -250,7 +250,7 @@ strong, bold, b{
 }
 
 .post-content p{
-  margin-top:0;
+  margin-bottom:0em;
   -webkit-margin-after: 0em;
 }
 
@@ -260,8 +260,17 @@ strong, bold, b{
 .post-content h4,
 .post-content h5,
 .post-content h5{
-  margin-top: 1.5em;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  -webkit-margin-after:1rem;
 }
+
+/*
+ Hack to target firefox and get cross browser paragraph spacing
+_:-moz-tree-row(hover), .post-content p {
+  margin-top: -1.5em;
+}
+*/
 
 
 
