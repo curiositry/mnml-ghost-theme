@@ -1485,7 +1485,7 @@ top: -35px;
 
   .main-nav {
       padding: 0;
-padding-left: 1.1em;
+      padding-left: 2em;
       margin-bottom: 2rem;
       border-bottom: #e0e4e7 1px solid;
   }
@@ -1510,15 +1510,12 @@ padding-left: 1.1em;
 
   .post {
       width: auto;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-      margin-left: 16px;
-      margin-right: 16px;
+      margin:2em;
       padding-bottom: 2rem;
   }
 
   .post-template .post-header {
-      margin-bottom: 2rem;
+      margin: 2rem 0;
   }
 
   .post-template .post-date {
@@ -1536,11 +1533,6 @@ padding-left: 1.1em;
   h1, h2, h3,
   h4, h5, h6 {
       margin: 0 0 0.3em 0;
-  }
-
-  .post-template .post {
-      padding-bottom: 0;
-      margin-bottom: 0;
   }
 
   .post-template .site-footer {
@@ -1568,6 +1560,13 @@ padding-left: 1.1em;
       margin: 0 0 2rem 0;
       padding: 0 0 1.6rem 0;
       border-bottom: #EBF2F6 1px dashed;
+  }
+
+  .author-image{
+    width: 50px;
+    height: 50px;
+    top:-25px;
+    margin-left:-25px;
   }
 
   .post-footer .share {
