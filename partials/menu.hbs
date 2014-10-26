@@ -3,7 +3,7 @@
   Modal Overlay
 */
 .modal-overlay {
-  background: rgba(0,0,0,.5);
+  background: slategray;
   height: 100%;
   left: 0;
   display: flex;
@@ -32,7 +32,7 @@
   Modal Content Area
 */
 .modal-content {
-  background:#fdfdfd;
+  background:slategray;
   margin: auto;
   overflow: auto;
   overflow-x: hidden;
@@ -41,9 +41,10 @@
   position: relative;
   transform: scale(.8);
   transition: transform .3s;
-  width: 90%;
-  height: 90%;
-  color:slategray;
+  width: 80%;
+  height: 80%;
+  color:#fdfdfd;
+  border:none;
 }
 
 .modal-overlay[aria-hidden="false"] .modal-content {
@@ -55,19 +56,20 @@
 */
 #modal_title {
   margin-top: 0;
-  font-family: "Alegreya", Georgia, serif;
-  font-style: italic;
-  color:slategray;
+  font-weight: 900;
+  text-transform: uppercase;
+  color:#BBC7CC;
 }
 
 /*
   Close Modal Button
 */
 .btn-close {
+  color:#fdfdfd;
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 2.5em;
+  font-size: 5em;
   font-weight: 400;
   line-height: .5em;
   padding: 0;
@@ -84,7 +86,6 @@
 .open-menu:hover,
 .btn-close,
 .btn-close:hover{
-  color:slategray;
   background: none;
   border:none;
   box-shadow: none;
@@ -93,30 +94,22 @@
 .open-menu {
   position: absolute;
   top:0;
-  right:1.5em;
+  right:.5em;
   padding: 0;
 }
 
-.menu-hamburger:before {
-  content: "";
-  position: absolute;
-  top: 0.25em;
-  left: 0;
-  width: 1em;
-  height: 0.125em;
-  border-top: 0.375em double #dd4814;
-  border-bottom: 0.125em solid #dd4814;
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s;
+.open-menu svg #menu-icon {
+  fill: #dd4814;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
 }
 
-.menu-hamburger:hover:before{
-  border-top: 0.375em double orange;
-  border-bottom: 0.125em solid orange;
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s;
+.open-menu svg:hover #menu-icon {
+  fill: orange;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
 }
 
 /* Navigation styles in Menu */
@@ -127,40 +120,60 @@
   }
   .menu a{
     text-decoration: none;
+    border-bottom: 1px dotted #fdfdfd;
+    color:#fdfdfd;
+  }
+
+  .menu a:hover{
+    color:white;
+    border-bottom: 1px solid #fff;
+  }
+
+  .flex-container{
+    display: flex;
+  }
+
+  .flex-container--center{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flex-child{
+    align-self:center;
   }
 
 </style>
 
     <button class="open-menu" type="button" id="modal_open">
-      <svg version="1.1" id="Untitled-2" xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px"
-      height="12px" viewBox="0 0 18 12" enable-background="new 0 0 18 12"
+      <svg version="1.1" id="menu-icon-svg" xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px"
+      height="21px" viewBox="0 0 20 19" enable-background="new 0 0 21 21"
       xml:space="preserve">
       <path fill="none" d="z"/>
-      <g id="Layer_x25_201">
-        <rect width="18" height="2"/>
-        <rect y="5" width="18" height="2"/>
-        <rect y="10" width="18" height="2"/>
+      <g id="menu-icon">
+        <rect width="21" height="3"/>
+        <rect y="7" width="21" height="3"/>
+        <rect y="14" width="21" height="3"/>
       </g>
       <path fill="none" d="z"/>
       </svg>
+
     </button>
 
     <div class="menu modal-overlay" id="modal_window"
              aria-hidden="true" role="dialog"
              aria-labelledby="Menu popup">
-      <div class="modal-content" id="modal_holder" role="document">
+      <div class="modal-content flex-container flex-container--center" id="modal_holder" role="document">
 
-        <h1 id="modal_title">Menu</h1>
-
-           <hr style="width:50%" class="m0a"><br>
+        <div class="flex-child">
+          <h1 class="beta" id="modal_title">Menu</h1>***
 
           <nav role="navigation" class="beta">
             <li><a href="{{@blog.url}}">Home</a></li>
             <li><a href="about">About</a></li>
             <li><a href="contact">Contact</a></li>
           </nav>
-<!--          <hr style="width:50%" class="m0a">-->
+        </div>
 
         <button class="btn-close" id="modal_close" type="button" aria-label="close">
           &times;
