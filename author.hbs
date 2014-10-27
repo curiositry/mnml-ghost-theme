@@ -5,12 +5,17 @@
 
 {{! Everything inside the #author tags pulls data from the author }}
 {{#author}}
-    <header class="main-header author-head">
-        <nav class="main-nav overlay clearfix">
-            <a class="back-button icon-arrow-left" href="{{@blog.url}}">Home</a>
-            <a class="subscribe-button icon-feed" href="{{url}}rss/">{{name}}</a>
-        </nav>
-    </header>
+
+<nav class="main-nav main-nav--author clearfix">
+        <div class="main-header-content" style="margin-left:2rem;">
+           <a href="{{@blog.url}}">
+            <h3><span class="back-arrow">← </span>Home</h3>
+           </a>
+        </div>
+</nav>
+<br clear="all"><br>
+
+
 
     <section class="author-profile inner">
         {{#if image}}
@@ -24,6 +29,7 @@
             {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
             {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
             <span class="author-stats"><i class="icon-stats"></i> {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
+            <span class="author-rss"><i class="icon-feed"></i><a href="/rss"> {{name}}</a></span>
         </div>
     </section>
 {{/author}}
