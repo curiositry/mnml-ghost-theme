@@ -180,6 +180,7 @@ body {
     color: #333;
     font-size:21px;
     background: #fdfdfd;
+    min-width: 350px;
 
     -webkit-hyphens: auto;
        -moz-hyphens: auto;
@@ -189,7 +190,7 @@ body {
 
 ::-moz-selection {
     background: slategray;
-    color:white
+    color:white;
 }
 
 ::selection {
@@ -657,13 +658,15 @@ aside.note:before{
     padding: 1em;
 }
 
-.main-nav--post h3{
+.main-nav--post h3,
+.main-nav--author h3{
   position:relative;
   right:1em;
   color:  #ccc;
 }
 
-.main-nav--post .back-arrow{
+.main-nav--post .back-arrow,
+.main-nav--author .back-arrow{
   color:orange;
   font-weight:900;
   position:relative;
@@ -1466,10 +1469,29 @@ top: -35px;
     font-size:16px;
   }
 
+  .home-template .page-title,
+  .archive-template .pagetitle{
+    font-size:48px;font-size:2.6667rem;margin-bottom:.61875rem
+  }
+
   .archive-template .main-header {
     max-height: 20%;
     min-height: 160px;
     padding: 10% 0;
+  }
+
+  .archive-template .main-header,
+  .home-template .main-header{
+    text-align: left;
+  }
+
+  .archive-template .main-header,
+  .home-template .main-header{
+    margin-left: 2em;
+  }
+
+  .page-title{
+    text-align: left;
   }
 
   .thumb{
@@ -1503,9 +1525,14 @@ top: -35px;
   }
 
   .inner,
-  .pagination {
+  .pagination,
+  .main-nav--author{
       width: auto;
       margin: 2rem auto;
+  }
+
+  .main-nav--author{
+    padding-bottom: 1rem;
   }
 
   .post {
