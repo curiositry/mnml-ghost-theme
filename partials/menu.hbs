@@ -25,7 +25,7 @@
 .modal-overlay[aria-hidden="false"] {
   opacity: 1;
   visibility: visible;
-  z-index: 2;
+  z-index: 3;
 }
 
 /*
@@ -93,9 +93,28 @@
 
 .open-menu {
   position: absolute;
-  top:0;
+  top:.5rem;
   right:.5em;
   padding: 0;
+}
+
+/*
+  @media screen and (max-width:900px){
+    .post-template .open-menu{
+      top:1em;
+    }
+  }
+*/
+
+  @media screen and (max-width:500px){
+    .open-menu{
+/*      top:1em;*/
+    }
+  }
+
+.post-template .open-menu,
+.author-template .open-menu{
+  top:.5rem;
 }
 
 .open-menu svg #menu-icon {
