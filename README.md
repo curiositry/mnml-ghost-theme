@@ -2,6 +2,8 @@
 
 Mnml is a beautiful, responsive, content-focused theme with great typography. The use of a type-scale, responsive typography, and carefully set line provide an optimal reading experience. Mnml also features post thumbnails on the homepage, an elegant print stylesheet, code syntax highlighting, and more.
 
+If you have a question or have found a bug please **open an issue** and help as soon as possible; if you like this theme, or use it on your blog, make me happy by **starring the project**, or spreading the word!
+
 ### See mnml in the wild!
 - [Autodidacts.io](http://autodidacts.io) almost always runs the latest version (what I made mnml for)
 - [mnml.herokuapp.com](http://mnml.herokuapp.com) Site for the theme. Runs latest official *release* or newer
