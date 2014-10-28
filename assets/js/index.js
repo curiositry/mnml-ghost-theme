@@ -1,13 +1,12 @@
 /**
  * Main JS file for Casper behaviours
- */
+*/
 
 /*globals jQuery, document */
 (function ($) {
     "use strict";
 
     $(document).ready(function(){
-
         $(".post-content").fitVids();
 
         function casperFullImg() {
@@ -55,7 +54,7 @@
           timeout = setTimeout(delayed, threshold || 100);
       };
   }
-  // smartresize 
+  // smartresize
   jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
 
 })(jQuery,'smartresize');
@@ -71,10 +70,10 @@
         };
         var options = $.extend(defaults, options);
 
-        options.elem.click(function(event){     
+        options.elem.click(function(event){
             event.preventDefault();
             var offset = ($(this).attr('data-offset')) ? $(this).attr('data-offset') : false,
-                position = ($(this).attr('data-position')) ? $(this).attr('data-position') : false;         
+                position = ($(this).attr('data-position')) ? $(this).attr('data-position') : false;
             if (offset) {
                 var toMove = parseInt(offset);
                 $('html,body').stop(true, false).animate({scrollTop: ($(this.hash).offset().top + toMove) }, options.speed);
