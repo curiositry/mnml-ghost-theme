@@ -530,7 +530,7 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .m0a{
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 /* Creates a responsive wrapper that makes our content scale nicely */
@@ -602,27 +602,43 @@ aside.note:before{
 .btn, button, input[type="button"]{
   color:white;
   background-color: #dd4814;
-  padding: .5% 2%;
+  background: -moz-linear-gradient(top, #dd4814 0%, #c23202 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #dd4814), color-stop(100%, #c23202));
+  background: -webkit-linear-gradient(top, #dd4814 0%, #c23202 100%);
+  background: -o-linear-gradient(top, #dd4814 0%, #c23202 100%);
+  background: -ms-linear-gradient(top, #dd4814 0%, #c23202 100%);
+  background: linear-gradient(to bottom, #dd4814 0%, #c23202 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd4814', endColorstr='#c23202', GradientType=0 );
+  padding: 1% 3%;
   text-indent: 0;
-  font-size:1.2em;
+  font-size:1em;
   text-decoration: none;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   text-transform: uppercase;
-  letter-spacing: .05em;
-  margin:.5em !important;
+  margin:.5em auto !important;
   display: inline-block;
   text-align: center;
   font-weight: 900;
   margin: 0 auto;
   border-radius: 2px;
-  border:1px solid #dd4814;
-  box-shadow: 0 0 10px 0px orange inset;
+  border:1px solid #990000;
 }
 
 .btn:active, .btn:hover,  .btn.active, button:active, button:hover, input[type=button]:active, input[type="button"]:hover{
   color:white;
-  background-color: orange;
-  box-shadow: 0 0 10px -2px #dd4814 inset;
+  background: orange;
+  box-shadow: 0 0 10px -3px #dd4814 inset;
+  border:1px solid #dd4814;
+}
+
+.btn--full-width{
+  width: 100%;
+}
+
+.btn a, button a, input[type="button"] a,
+.btn a:hover, button a:hover, input[type="button"] a:hover{
+  color:white;
+  text-decoration: none;
 }
 
 /* Centres vertically yo. (IE8+) */
