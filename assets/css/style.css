@@ -554,7 +554,7 @@ margin on the iframe, cause it breaks stuff. */
   width: 100%;
 }
 
-.pull{
+.pullquote--pulled{
   float:right;
   width: 50%;
   margin: 2%;
@@ -565,7 +565,7 @@ margin on the iframe, cause it breaks stuff. */
   font-family: "Alegreya", georgia, serif;
 }
 
-.pull:before{
+.pullquote--pulled:before{
   content:"“";
   font-size: 4em;
   position: relative;
