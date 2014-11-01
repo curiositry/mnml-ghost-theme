@@ -10,6 +10,7 @@ If you have a question or have found a bug please **open an issue** and help as 
 
 Features:
 
+- Compatible with the latest version of Ghost (v0.5.3)
 - Totally responsive
 - Perfect readability — MNML features a type-scale, responsive typography, and carefully set line length for the best reading experience.
 - Great Typography
@@ -21,9 +22,11 @@ Features:
 - Prism.js syntax highlighting
 - Better horozontal rules
 - `.thumb` class for inline responsive thumbnails
-- Responsive post thumbnails on the homepage [NEW!]
-- Elegant print stylesheet [NEW!]
-- Robots.txt inproves SEO by removing tag listings from search engines so your content is more prominent [NEW!]
+- Responsive post thumbnails on the homepage
+- Elegant print stylesheet
+- Robots.txt inproves SEO by removing tag listings from search engines so your content is more prominent
+- Responsive, accessible menu for static pages (or anything else) that stays out of the way [NEW!]
+- Comments powered by Disqus, and loaded with AJAX that don’t slow down your site. [NEW!]
 
 
 ![Screenshot](http://api.drp.io/files/5437789e305b7.png)
