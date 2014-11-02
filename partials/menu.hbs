@@ -1,5 +1,4 @@
 <style>
-
 .modal-overlay {
   background: slategray;
   height: 100%;
@@ -62,14 +61,15 @@
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 5em;
+  font-size: 4em;
   font-weight: 400;
-  line-height: .5em;
+  line-height: 0;
   padding: 0;
   position: absolute;
-  right: 0;
+  right:.3em;
   top:0;
   z-index: 2;
+  cursor: pointer;
 }
 
 
@@ -173,11 +173,12 @@
           </nav>
         </div>
 
-        <button class="btn-close" id="modal_close" type="button" aria-label="close">
-          &times;
-        </button>
+
 
       </div> <!-- end .modal-content -->
+      <button class="btn-close" id="modal_close" type="button" aria-label="close">
+          &times;
+        </button>
     </div> <!-- end .modal-overlay -->
 
 
