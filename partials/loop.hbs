@@ -17,7 +17,6 @@
       var mq = window.matchMedia( "(min-width: 500px)" );
       if (mq.matches){
         var thumbnailContainer = document.getElementById('{{url}}-post-thumbnail')
-        thumbnailContainer.innerHTML = "<img src='{{image}}' alt='{{title}}' />";
 
         if (!String.prototype.contains) {
           String.prototype.contains = function(s) {
