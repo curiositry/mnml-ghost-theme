@@ -53,6 +53,12 @@
     -->
     {{!>menu}}
 
+    <!-- This loads katex.hbs in; if a page has anything with the class math, katex.hbs            loads Khan Academy’s Tex math typesetting library and runs it on the content.
+
+         If you don’t want to use KaTeX, comment this out.
+    -->
+    {{>katex}}
+
     {{! Ghost outputs important scripts and data with this tag }}
     {{ghost_foot}}
 

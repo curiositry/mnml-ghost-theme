@@ -27,6 +27,11 @@ Features:
 - Robots.txt inproves SEO by removing tag listings from search engines so your content is more prominent
 - Responsive, accessible menu for static pages (or anything else) that stays out of the way [NEW!]
 - Comments powered by Disqus, and loaded with AJAX that don’t slow down your site. [NEW!]
-
+- Blazing fast
+  - Thumbnails are resized automathically.
+  - Non-essential scripts and styles are loaded asynchronously or deferred
+  - Comments are only loaded when needed
+  - Uses the fastest math rendering library, and the fastest webfont provider [citation needed]
+- Optional Math rendering with KaTeX
 
 ![Screenshot](http://api.drp.io/files/5437789e305b7.png)

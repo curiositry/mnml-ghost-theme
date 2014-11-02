@@ -875,6 +875,17 @@ aside.note:before{
     padding-bottom: 0;
 }
 
+.katex-display {
+margin: 1em 0;
+text-align: center;
+}
+
+.katex-display > span {
+display: inline-block;
+overflow: hidden;
+margin: 0 auto;
+}
+
 /* Kill that stylish little circle that was on the border, too */
 .post-template .post:after {
     display: none;
