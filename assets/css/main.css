@@ -160,9 +160,13 @@ strong, bold, b{
   font-weight: 700;
 }
 
-/* These styles set up book style paragraphing, and make the spacing work.
-   Unfortunatly, you can’t use p + p with inline elements (like thumbanils).*/
+/* ================= TRADITIONAL PARAGRAPHING ======================*/
 
+/* These styles set up book style paragraphing, and make the spacing work.
+   Unfortunatly, you can’t use p + p with inline elements (like thumbanils).
+
+   Comment this block out if you want your paragraphs marked by space rather
+   than indent. */
 
 .post-content p + p,
 .post-content .thumb + p,
@@ -186,15 +190,7 @@ strong, bold, b{
   -webkit-margin-after:1rem;
 }
 
-/*
- Hack to target firefox and get cross browser paragraph spacing
-_:-moz-tree-row(hover), .post-content p {
-  margin-top: -1.5em;
-}
-*/
-
-
-
+/* END OF TRADITIONAL PARAGRAPH STYLES*/
 
 
 
@@ -752,14 +748,11 @@ aside.note:before{
 .post-content > p:first-child:first-letter{
   font-size:5rem;
   margin:.7rem .5rem 0 0;
-/*  padding:-1px;*/
   height:5rem;
   line-height:1;
   float:left;
   color:slategray;
   font-weight: 900;
-/*  font-family: Source Sans Pro;*/
-/*  text-shadow: .2rem .2rem 0 #BBC7CC;*/
   *line-height:1rem; /* IE7 Only */
   -webkit-margin-before: 0 !important;
   -webkit-margin-after: -.2em !important;
