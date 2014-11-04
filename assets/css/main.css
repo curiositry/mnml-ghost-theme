@@ -468,6 +468,8 @@ margin on the iframe, cause it breaks stuff. */
   text-align: center;
   font-size:1.5em;
   padding:.5em;
+  max-width: 100%;
+  overflow: auto;
 }
 
 /* Makes for a nice small, responsive image that floats right*/
