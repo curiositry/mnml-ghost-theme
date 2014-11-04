@@ -87,6 +87,8 @@ LICENSE URL ... https://github.com/typeplate/bower/blob/master/license.txt*/
 
 
 
+
+
 /* ==========================================================================
    2. General - Setting up some base styles
    ========================================================================== */
@@ -314,7 +316,6 @@ code, tt {
 pre {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 0 0 1.7em 0;
   border: #E3EDF3 1px solid;
   width: 100%;
   padding: 10px;
@@ -460,6 +461,13 @@ margin on the iframe, cause it breaks stuff. */
   width: 80%;
   max-width: 780px;
   margin: 0 auto;
+}
+
+/* This is the class that KaTeX looks for an typesets the contents of */
+.math{
+  text-align: center;
+  font-size:1.5em;
+  padding:.5em;
 }
 
 /* Makes for a nice small, responsive image that floats right*/
