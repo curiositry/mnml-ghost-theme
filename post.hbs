@@ -22,7 +22,8 @@
         <header class="post-header">
             <h1 class="post-title beta">{{title}}</h1>
             <section class="post-meta">
-                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">Published on {{date format="MMMM Do YYYY"}}</time>{{tags prefix=" &bull; tagged "}}
+                By {{#author}}<a href="{{url}}">{{name}}</a>{{/author}} on
+                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}"> {{date format="MMMM Do YYYY"}}</time>{{tags prefix=" &bull; Tagged "}}
             </section>
         </header>
 
@@ -76,6 +77,6 @@
         </footer>
     {{/post}}
     <!--  If you want Disqus comments, uncomment this. Make sure to set your disqus shortname in partials/comments.hbs first!  -->
-    {{!>comments}}
+    {{>comments}}
     </article>
 </main>
