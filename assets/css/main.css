@@ -478,6 +478,7 @@ margin on the iframe, cause it breaks stuff. */
   max-width:225px;
   margin: .5em !important;
   float:right;
+  line-height: 1;
 }
 
 .thumb img.full-img{
