@@ -19,7 +19,7 @@ a { background: transparent; }
 a:focus { outline: thin dotted; }
 a:active, a:hover { outline: 0; }
 h1 { font-size: 2em; margin: 0.67em 0; }
-abbr[title] { border-bottom: 1px dotted; }
+/*abbr[title] { border-bottom: 1px dotted; }*/
 b, strong { font-weight: 500; }
 dfn { font-style: italic; }
 hr {
@@ -83,7 +83,7 @@ Github ........ https://github.com/typeplate/bower
 AUTHORS ....... Dennis Gaebel (@gryghostvisuals) & Zachary Kain (@zakkain)
 LICENSE ....... Creative Commmons Attribution 3.0 (http://creativecommons.org/licenses/by/3.0)
 LICENSE URL ... https://github.com/typeplate/bower/blob/master/license.txt*/
-@font-face{font-family:Ampersand;src:local("Georgia"),local("Garamond"),local("Palatino"),local("Book Antiqua");unicode-range:U+0026}@font-face{font-family:Ampersand;src:local("Georgia");unicode-range:U+270C}.ampersand{font-family:Ampersand,Verdana,sans-serif}.breakword{word-wrap:break-word}.normal-wrap{word-wrap:normal}.inherit-wrap{word-wrap:auto}.drop-cap:first-letter{float:left;margin:auto .25em auto auto;padding:inherit;font-size:4em;font-family:inherit;line-height:1;text-indent:0;background:0 0;color:inherit}p+.drop-cap{text-indent:0;margin-top:0}html{font:400 112.5%/1.65 serif}body{-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;-o-hyphens:auto;hyphens:auto;word-wrap:break-word;color:  #444}small{font-size:65%}h1,h2,h3,h4,h5,h6{line-height:1;margin-top:0;text-rendering:optimizeLegibility;color:  #222}.tera{font-size:117px;font-size:6.5rem;margin-bottom:.25385rem}.giga{font-size:90px;font-size:5rem;margin-bottom:.33rem}.mega{font-size:72px;font-size:4rem;margin-bottom:.4125rem}.alpha,h1{font-size:60px;font-size:3.33333rem;margin-bottom:.495rem}.beta,h2{font-size:48px;font-size:2.6667rem;margin-bottom:.61875rem}.gamma,h3{font-size:36px;font-size:2rem;margin-bottom:.825rem}.delta,h4{font-size:24px;font-size:1.3333333333333333rem;margin-bottom:1.2375rem}.epsilon,h5{font-size:21px;font-size:1.16667rem;margin-bottom:1.41429rem}.zeta,h6{font-size:18px;font-size:1rem;margin-bottom:1.65rem}p{margin:auto auto 1.5em}abbr,acronym,blockquote,code,dir,kbd,listing,plaintext,q,samp,tt,var,xmp{-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;-o-hyphens:none;hyphens:none}pre code{word-wrap:normal;white-space:-moz-pre-wrap;white-space:pre-wrap}pre{white-space:pre}code{white-space:pre;font-family:monospace}abbr{font-variant:small-caps;font-weight:600;text-transform:lowercase;color:gray}abbr[title]:hover{cursor:help}.lining dd,.lining dt{display:inline;margin:0}.lining dd+dt:before,.lining dt+dt:before{content:"\A";white-space:pre}.lining dd+dd:before{content:", "}.lining dd:before{content:": ";margin-left:-.2em}.dictionary-style dt{display:inline;counter-reset:definitions}.dictionary-style dt+dt:before{content:", ";margin-left:-.2em}.dictionary-style dd{display:block;counter-increment:definitions}.dictionary-style dd:before{content:counter(definitions,decimal) ". "}.blockquote p:last-of-type{margin-bottom:-.825em}.blockquote+figcaption{display:block;font-size:inherit;text-align:right}.blockquote+figcaption:before{content:"-"}.pull-quote{position:relative;padding:1em}.pull-quote:after,.pull-quote:before{height:1em;opacity:.15;position:absolute;font-size:4em;color:  #dc976e}.pull-quote:before{content:'“';top:0;left:0}.pull-quote:after{content:'”';bottom:0;right:0}
+@font-face{font-family:Ampersand;src:local("Georgia"),local("Garamond"),local("Palatino"),local("Book Antiqua");unicode-range:U+0026}@font-face{font-family:Ampersand;src:local("Georgia");unicode-range:U+270C}.ampersand{font-family:Ampersand,Verdana,sans-serif}.breakword{word-wrap:break-word}.normal-wrap{word-wrap:normal}.inherit-wrap{word-wrap:auto}.drop-cap:first-letter{float:left;margin:auto .25em auto auto;padding:inherit;font-size:4em;font-family:inherit;line-height:1;text-indent:0;background:0 0;color:inherit}p+.drop-cap{text-indent:0;margin-top:0}html{font:400 112.5%/1.65 serif}body{-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;-o-hyphens:auto;hyphens:auto;word-wrap:break-word;color:  #444}small{font-size:65%}h1,h2,h3,h4,h5,h6{line-height:1;margin-top:0;text-rendering:optimizeLegibility;color:  #222}.tera{font-size:117px;font-size:6.5rem;margin-bottom:.25385rem}.giga{font-size:90px;font-size:5rem;margin-bottom:.33rem}.mega{font-size:72px;font-size:4rem;margin-bottom:.4125rem}.alpha,h1{font-size:60px;font-size:3.33333rem;margin-bottom:.495rem}.beta,h2{font-size:48px;font-size:2.6667rem;margin-bottom:.61875rem}.gamma,h3{font-size:36px;font-size:2rem;margin-bottom:.825rem}.delta,h4{font-size:24px;font-size:1.3333333333333333rem;margin-bottom:1.2375rem}.epsilon,h5{font-size:21px;font-size:1.16667rem;margin-bottom:1.41429rem}.zeta,h6{font-size:18px;font-size:1rem;margin-bottom:1.65rem}p{margin:auto auto 1.5em}abbr,acronym,blockquote,code,dir,kbd,listing,plaintext,q,samp,tt,var,xmp{-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;-o-hyphens:none;hyphens:none}pre code{word-wrap:normal;white-space:-moz-pre-wrap;white-space:pre-wrap}pre{white-space:pre}code{white-space:pre;font-family:monospace}abbr{font-variant:small-caps;font-weight:600;text-transform:lowercase;color:slategray}abbr[title]:hover{cursor:help}.lining dd,.lining dt{display:inline;margin:0}.lining dd+dt:before,.lining dt+dt:before{content:"\A";white-space:pre}.lining dd+dd:before{content:", "}.lining dd:before{content:": ";margin-left:-.2em}.dictionary-style dt{display:inline;counter-reset:definitions}.dictionary-style dt+dt:before{content:", ";margin-left:-.2em}.dictionary-style dd{display:block;counter-increment:definitions}.dictionary-style dd:before{content:counter(definitions,decimal) ". "}.blockquote p:last-of-type{margin-bottom:-.825em}.blockquote+figcaption{display:block;font-size:inherit;text-align:right}.blockquote+figcaption:before{content:"-"}.pull-quote{position:relative;padding:1em}.pull-quote:after,.pull-quote:before{height:1em;opacity:.15;position:absolute;font-size:4em;color:  #dc976e}.pull-quote:before{content:'“';top:0;left:0}.pull-quote:after{content:'”';bottom:0;right:0}
 
 
 
@@ -125,15 +125,12 @@ h4, h5, h6,
 main-nav a,
 .post-meta,
 .site-footer,
-.pagination,
-.back-button, .subscribe-button{
+.pagination{
     font-family: "Source Sans Pro", Helvetica, sans-serif;
-
 }
 
 h3, h4, h5, h6,
-.older-posts, .newer-posts,
-.back-button, .subscribe-button{
+.older-posts, .newer-posts{
   text-transform: uppercase;
   font-weight: 900;
 }
@@ -645,40 +642,6 @@ aside.note:before{
   width: auto;
 }
 
-.back-button, .subscribe-button{
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  display: inline-block;
-  padding: .4em .3em .3em .3em;
-  border: transparent 1px solid;
-  color: #9EABB3;
-  font-weight: 400;
-  text-align: center;
-  text-transform: uppercase;
-  border-radius: 3px;
-  transition: all ease 0.3s;
-}
-
-.back-button {
-  float: left;
-}
-.back-button:before {
-  position: relative;
-  bottom: -2px;
-  margin-right: 8px;
-}
-
-.subscribe-button {
-  float: right;
-}
-.subscribe-button:before {
-  margin-right: 8px;
-  position: relative;
-  bottom: -2px;
-}
-
-
 /* The details of your blog. Defined in ghost/settings/ */
 .page-title {
   margin: 10px 0 10px 0;
@@ -789,8 +752,9 @@ aside.note:before{
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   display: block;
   margin: .5em 0 0 0;
-  color: #9EABB3;
-  font-size:.857em;
+  color: lightslategray;
+/*font-size:.857em;*/
+  font-size: 16px;
 }
 
 .author-thumb {
@@ -802,7 +766,7 @@ aside.note:before{
 }
 
 .post-meta a {
-  color: #999;
+  color: slategray;
   text-decoration: none;
 }
 
