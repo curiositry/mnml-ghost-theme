@@ -1,43 +1,22 @@
 {{!< default}}
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 <nav class="main-nav main-nav--author clearfix">
-        <div class="main-header-content" style="margin-left:2rem;">
-           <a href="{{@blog.url}}">
-            <h3><span class="back-arrow">← </span>Home</h3>
-           </a>
-        </div>
+  <div class="main-header-content" style="margin-left:2rem;">
+     <a href="{{@blog.url}}">
+      <h3><span class="back-arrow">← </span>Home</h3>
+     </a>
+  </div>
 </nav>
 
-      <header class="main-header tag-head inner">
-          <h1 class="page-title">{{tag.name}}</h1>
-          <h2 class="page-description delta">A {{pagination.total}}-post collection</h2>
-          <br>
-          <a class="icon-feed tdn" href="{{@blog.url}}/tag/{{tag.slug}}/rss/"> RSS</a>             <em>feed of posts tagged <strong>{{tag.name}}</strong></em>
-      </header>
-
+<header class="main-header tag-head inner">
+  <h1 class="page-title">{{tag.name}}</h1>
+  <h2 class="page-description delta">A {{pagination.total}}-post collection</h2>
+  <br>
+  <a class="icon-feed tdn" href="{{@blog.url}}/tag/{{tag.slug}}/rss/"> RSS</a>               <em>feed of posts tagged <strong>{{tag.name}}</strong></em>
+</header>
 
 {{! The main content area on the homepage }}
 <main class="content" role="main">
-
     {{! The tag below includes the post loop - partials/loop.hbs }}
     {{> "loop"}}
-
 </main>
-
-
-
-<!--
-
-{{! The big featured header }}
-<header class="main-header tag-head">
-    <nav class="main-nav overlay clearfix">
-        <a class="back-button icon-arrow-left" href="{{@blog.url}}">Home</a>
-        <a class="subscribe-button icon-feed" href="{{@blog.url}}/tag/{{tag.slug}}/rss/">{{tag.name}}</a>
-    </nav>
-
-      <div class="main-header-content inner">
-          <h1 class="page-title">{{tag.name}}</h1>
-          <h2 class="page-description delta">A {{pagination.total}}-post collection</h2>
-      </div>
-</header>
--->
