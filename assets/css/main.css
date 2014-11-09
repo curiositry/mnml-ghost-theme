@@ -655,6 +655,41 @@ aside.note:before{
   letter-spacing: 0;
 }
 
+
+
+/* The hamburger menu icon — the styles for the open menu are deferred */
+.open-menu,
+.open-menu:hover,
+.btn-close,
+.btn-close:hover{
+  background: none;
+  border:none;
+  box-shadow: none;
+}
+
+.open-menu {
+  position: absolute;
+  top:.5rem;
+  right:1em;
+  padding: 0;
+}
+
+.open-menu svg  {
+  fill: #dd4814;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.open-menu:hover svg{
+  fill: orange;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+
+
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
   position: relative;

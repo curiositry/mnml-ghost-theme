@@ -74,6 +74,114 @@ code[class*=language-],pre[class*=language-]{color:#000;text-shadow:0 1px #fff;f
 }
 
 
+/* Styles Modal Menu, when open*/
+
+.modal-overlay {
+  background: slategray;
+  height: 100%;
+  left: 0;
+  display: flex;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  transition: opacity .2s;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  text-align: center;
+}
+
+.modal-overlay[aria-hidden="true"] {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-overlay[aria-hidden="false"] {
+  opacity: 1;
+  visibility: visible;
+  z-index: 3;
+}
+
+
+/*
+  Modal Content Area
+*/
+.modal-content {
+  background:slategray;
+  margin: auto;
+  overflow: auto;
+  overflow-x: hidden;
+  padding: 1.5em;
+  box-sizing: border-box;
+  position: relative;
+  transform: scale(.8);
+  transition: transform .3s;
+  width: 80%;
+  height: 80%;
+  color:#fdfdfd;
+  border:none;
+}
+
+.modal-overlay[aria-hidden="false"] .modal-content {
+  transform: scale(1);
+}
+
+#modal_title {
+  margin-top: 0;
+  font-weight: 900;
+  text-transform: uppercase;
+  color:#BBC7CC;
+}
+
+.btn-close {
+  color:#fdfdfd;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 4em;
+  font-weight: 400;
+  line-height: .5;
+  padding: 0;
+  position: absolute;
+  right:.5em;
+  top:0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Nav styles in the menu */
+  .menu li{
+    list-style-type:none;
+    font-family: Source Sans Pro;
+    font-weight: 900;
+  }
+  .menu a{
+    text-decoration: none;
+    border-bottom: 1px dotted #fdfdfd;
+    color:#fdfdfd;
+  }
+
+  .menu a:hover{
+    color:white;
+    border-bottom: 1px solid #fff;
+  }
+
+  .flex-container{
+    display: flex;
+  }
+
+  .flex-container--center{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flex-child{
+    align-self:center;
+  }
+
+
+
+/* FONTS */
 
 /* This is the response sent by the commented out Brick.im lin in default.hbs. Just putting it here to minimize requests.*/
 @font-face{font-family:'Source Serif Pro';font-style:normal;font-weight:400;src:local('Source Serif Pro'),url(//brick.a.ssl.fastly.net/fonts/sourceserifpro/400.woff) format('woff')}@font-face{font-family:'Source Serif Pro';font-style:normal;font-weight:700;src:local('Source Serif Pro Bold'),url(//brick.a.ssl.fastly.net/fonts/sourceserifpro/700.woff) format('woff')}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:400;src:local('Source Sans Pro Regular'),url(//brick.a.ssl.fastly.net/fonts/sourcesanspro/400.woff) format('woff')}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:900;src:local('Source Sans Pro Black'),url(//brick.a.ssl.fastly.net/fonts/sourcesanspro/900.woff) format('woff')}@font-face{font-family:'Source Sans Pro';font-style:italic;font-weight:400;src:local('Source Sans Pro Italic'),url(//brick.a.ssl.fastly.net/fonts/sourcesanspro/400i.woff) format('woff')}@font-face{font-family:'Source Sans Pro';font-style:italic;font-weight:900;src:local('Source Sans Pro Black Italic'),url(//brick.a.ssl.fastly.net/fonts/sourcesanspro/900i.woff) format('woff')}@font-face{font-family:'Alegreya';font-style:italic;font-weight:400;src:local('Alegreya Italic'),url(//brick.a.ssl.fastly.net/fonts/alegreya/400i.woff) format('woff')}@font-face{font-family:'Alegreya';font-style:italic;font-weight:700;src:local('Alegreya Bold Italic'),url(//brick.a.ssl.fastly.net/fonts/alegreya/700i.woff) format('woff')}

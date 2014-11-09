@@ -1,184 +1,44 @@
-<style>
-.modal-overlay {
-  background: slategray;
-  height: 100%;
-  left: 0;
-  display: flex;
-  overflow: auto;
-  position: fixed;
-  top: 0;
-  transition: opacity .2s;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  text-align: center;
-}
+<button class="open-menu" type="button" id="modal_open">
+  <svg version="1.1" id="menu-icon-svg" xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px"
+  height="35px" viewBox="0 0 25 25" enable-background="new 0 0 25 25"
+  xml:space="preserve">
+  <path fill="none"/>
+  <g id="menu-icon">
+    <rect width="25" height="2"/>
+    <rect y="5" width="25" height="2"/>
+    <rect y="10" width="25" height="2"/>
+  </g>
+  <path fill="none" d="z"/>
+  <text y="23" font-size="10px" fill="slategray" font-weight="400">MENU</text>
+  </svg>
+</button>
 
-.modal-overlay[aria-hidden="true"] {
-  opacity: 0;
-  visibility: hidden;
-}
+<div class="menu modal-overlay" id="modal_window"
+     aria-hidden="true" role="dialog"
+     aria-labelledby="Menu popup">
+  <div class="modal-content flex-container flex-container--center" id="modal_holder" role="document">
 
-.modal-overlay[aria-hidden="false"] {
-  opacity: 1;
-  visibility: visible;
-  z-index: 3;
-}
+    <div class="flex-child">
+      <h1 class="beta" id="modal_title">Menu</h1>
 
+      ***
 
-/*
-  Modal Content Area
-*/
-.modal-content {
-  background:slategray;
-  margin: auto;
-  overflow: auto;
-  overflow-x: hidden;
-  padding: 1.5em;
-  box-sizing: border-box;
-  position: relative;
-  transform: scale(.8);
-  transition: transform .3s;
-  width: 80%;
-  height: 80%;
-  color:#fdfdfd;
-  border:none;
-}
+      <nav role="navigation" class="beta">
+        <li><a href="{{@blog.url}}">Home</a></li>
+        <li><a href="{{@blog.url}}/about">About</a></li>
+        <li><a href="{{@blog.url}}/contact">Contact</a></li>
+      </nav>
+    </div>
 
-.modal-overlay[aria-hidden="false"] .modal-content {
-  transform: scale(1);
-}
+  </div> <!-- end .modal-content -->
 
-#modal_title {
-  margin-top: 0;
-  font-weight: 900;
-  text-transform: uppercase;
-  color:#BBC7CC;
-}
+  <!-- Close button -->
+  <button class="btn-close" id="modal_close" type="button" aria-label="close">
+      &times;
+  </button>
 
-.btn-close {
-  color:#fdfdfd;
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 4em;
-  font-weight: 400;
-  line-height: .5;
-  padding: 0;
-  position: absolute;
-  right:.5em;
-  top:0;
-  z-index: 2;
-  cursor: pointer;
-}
-
-
-/* Hamburger Menu Icon */
-.open-menu,
-.open-menu:hover,
-.btn-close,
-.btn-close:hover{
-  background: none;
-  border:none;
-  box-shadow: none;
-}
-
-.open-menu {
-  position: absolute;
-  top:.5rem;
-  right:1em;
-  padding: 0;
-}
-
-.open-menu svg  {
-  fill: #dd4814;
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
-}
-
-.open-menu:hover svg{
-  fill: orange;
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
-}
-
-/* Navigation styles in Menu */
-  .menu li{
-    list-style-type:none;
-    font-family: Source Sans Pro;
-    font-weight: 900;
-  }
-  .menu a{
-    text-decoration: none;
-    border-bottom: 1px dotted #fdfdfd;
-    color:#fdfdfd;
-  }
-
-  .menu a:hover{
-    color:white;
-    border-bottom: 1px solid #fff;
-  }
-
-  .flex-container{
-    display: flex;
-  }
-
-  .flex-container--center{
-    align-items: center;
-    justify-content: center;
-  }
-
-  .flex-child{
-    align-self:center;
-  }
-
-</style>
-
-    <button class="open-menu" type="button" id="modal_open">
-      <svg version="1.1" id="menu-icon-svg" xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px"
-      height="35px" viewBox="0 0 25 25" enable-background="new 0 0 25 25"
-      xml:space="preserve">
-      <path fill="none"/>
-      <g id="menu-icon">
-        <rect width="25" height="2"/>
-        <rect y="5" width="25" height="2"/>
-        <rect y="10" width="25" height="2"/>
-      </g>
-      <path fill="none" d="z"/>
-      <text y="23" font-size="10px" fill="slategray" font-weight="400">MENU</text>
-      </svg>
-
-    </button>
-
-    <div class="menu modal-overlay" id="modal_window"
-             aria-hidden="true" role="dialog"
-             aria-labelledby="Menu popup">
-      <div class="modal-content flex-container flex-container--center" id="modal_holder" role="document">
-
-        <div class="flex-child">
-          <h1 class="beta" id="modal_title">Menu</h1>
-          ***
-
-          <nav role="navigation" class="beta">
-            <li><a href="{{@blog.url}}">Home</a></li>
-            <li><a href="{{@blog.url}}/about">About</a></li>
-            <li><a href="{{@blog.url}}/contact">Contact</a></li>
-          </nav>
-        </div>
-
-
-
-      </div> <!-- end .modal-content -->
-      <button class="btn-close" id="modal_close" type="button" aria-label="close">
-          &times;
-        </button>
-    </div> <!-- end .modal-overlay -->
-
-
-
+</div> <!-- end .modal-overlay -->
 
 <script>
 // helper function to place modal window as the first child
@@ -191,7 +51,6 @@ function swap () {
 }
 
 swap();
-
 // modal window
 (function() {
 
