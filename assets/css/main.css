@@ -688,6 +688,17 @@ aside.note:before{
   transition: .3s;
 }
 
+/* And these make it so it doesn’t flash until defer.css is loaded*/
+.modal-overlay[aria-hidden="true"] {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-overlay[aria-hidden="false"] {
+  opacity: 1;
+  visibility: visible;
+  z-index: 3;
+}
 
 
 /* Every post, on every page, gets this style on its <article> tag */

@@ -91,16 +91,6 @@ code[class*=language-],pre[class*=language-]{color:#000;text-shadow:0 1px #fff;f
   text-align: center;
 }
 
-.modal-overlay[aria-hidden="true"] {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.modal-overlay[aria-hidden="false"] {
-  opacity: 1;
-  visibility: visible;
-  z-index: 3;
-}
 
 
 /*
