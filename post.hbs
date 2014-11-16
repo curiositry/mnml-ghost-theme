@@ -3,15 +3,7 @@
 {{! The comment above "< default" means - insert everything in this file into
     the {body} of the default.hbs template, which contains our header/footer. }}
 
-<nav class="main-nav main-nav--post clearfix">
-<!--    <a class="back-button icon-arrow-left" href="{{@blog.url}}">Home</a>-->
-        <div class="main-header-content inner ">
-           <a href="{{@blog.url}}">
-
-            <h3><span class="back-arrow">← </span>{{@blog.title}}</h3>
-            </a>
-        </div>
-</nav>
+{{>content-header}}
 
 <main class="content" role="main">
 
@@ -20,10 +12,11 @@
     {{#post}}
 
         <header class="post-header">
-            <h1 class="post-title beta">{{title}}</h1>
+            <h1 class="post-title typl8-gamma">{{title}}</h1>
             <section class="post-meta">
-                By {{#author}}<a href="{{url}}">{{name}}</a>{{/author}} on
-                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}"> {{date format="MMM Do YYYY"}}</time>{{tags prefix=" &bull; Tagged "}}
+                By {{#author}}<a href="{{url}}">{{name}}</a>{{/author}}
+                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}"> {{date format="MMM Do YYYY"}}</time>
+                <span class="post-tags">{{tags prefix="Tags: "}}</span>
             </section>
         </header>
 
@@ -76,7 +69,9 @@
 
         </footer>
     {{/post}}
-    <!--  If you want Disqus comments, uncomment this. Make sure to set your disqus shortname in partials/comments.hbs first!  -->
+    <!--
+    If you want Disqus comments, uncomment this. Make sure to set your disqus shortname in partials/comments.hbs first!
+     -->
     {{!>comments}}
     </article>
 </main>

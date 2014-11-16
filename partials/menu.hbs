@@ -9,26 +9,27 @@
     <rect y="5" width="25" height="2"/>
     <rect y="10" width="25" height="2"/>
   </g>
-  <path fill="none" d="z"/>
+  <path fill="none" d="Z" />
   <text y="23" font-size="10px" fill="slategray" font-weight="400">MENU</text>
   </svg>
 </button>
 
 <div class="menu modal-overlay" id="modal_window"
      aria-hidden="true" role="dialog"
-     aria-labelledby="Menu popup">
+     aria-labelledby="menu">
   <div class="modal-content flex-container flex-container--center" id="modal_holder" role="document">
 
     <div class="flex-child">
-      <h1 class="beta" id="modal_title">Menu</h1>
-
-      ***
-
-      <nav role="navigation" class="beta">
+      <h1 class="typl8-beta" id="modal_title">Menu</h1><br>
+      * * *
+      <nav role="navigation" class="typl8-gamma">
+      <ul>
         <li><a href="{{@blog.url}}">Home</a></li>
         <li><a href="{{@blog.url}}/about">About</a></li>
         <li><a href="{{@blog.url}}/contact">Contact</a></li>
+      </ul>
       </nav>
+      * * *
     </div>
 
   </div> <!-- end .modal-content -->

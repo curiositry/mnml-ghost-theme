@@ -1,16 +1,11 @@
 {{!< default}}
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
-<nav class="main-nav main-nav--author clearfix">
-  <div class="main-header-content" style="margin-left:2rem;">
-     <a href="{{@blog.url}}">
-      <h3><span class="back-arrow">← </span>Home</h3>
-     </a>
-  </div>
-</nav>
+
+{{>content-header}}
 
 <header class="main-header tag-head inner">
   <h1 class="page-title">{{tag.name}}</h1>
-  <h2 class="page-description delta">A {{pagination.total}}-post collection</h2>
+  <h2 class="page-description typl8-delta">A {{pagination.total}}-post collection</h2>
   <br>
   <a class="icon-feed tdn" href="{{@blog.url}}/tag/{{tag.slug}}/rss/"> RSS</a>               <em>feed of posts tagged <strong>{{tag.name}}</strong></em>
 </header>
