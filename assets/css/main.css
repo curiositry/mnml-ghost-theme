@@ -226,6 +226,20 @@ ul ol, ol ul {
   padding-left: 2.457rem;
 }
 
+input, textarea{
+  border-radius:0;
+  min-width: 55%;
+  border:2px solid slategray;
+  padding:.55rem;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  margin: .55rem auto;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus{
+  border:2px solid #dd4814;
+}
+
 li {
   margin-top: .25rem;
 }
@@ -1629,6 +1643,10 @@ top: -35px;
 
   hr {
     margin: 1.6em 0;
+  }
+
+  input, textarea{
+    width: 100%;
   }
 
   p, ul, ol, dl {
