@@ -487,6 +487,10 @@ margin on the iframe, cause it breaks stuff. */
   text-decoration: none;
 }
 
+.lh-2-3{
+  line-height: 1.1;
+}
+
 .sc{
   -moz-font-feature-settings: "smcp=1";
   -moz-font-feature-settings: "smcp";
@@ -517,8 +521,8 @@ margin on the iframe, cause it breaks stuff. */
 /* Makes for a nice small, responsive image that floats right*/
 .thumb{
   width: 100%;
-  max-width:225px;
-  margin: .5em !important;
+  max-width: 225px;
+  margin: .55rem !important;
   float:right;
   line-height: 1;
 }
@@ -528,49 +532,14 @@ margin on the iframe, cause it breaks stuff. */
   width: 100%;
 }
 
-.pullquote--pulled, .pull{
+.pullquote--pulled, .pull, .p-quote:after{
   display: inline-block;
   float:right;
-  width: 50%;
-  margin: 2%;
-  margin-left: 0;
-  font-style: italic;
-  border-left: none;
-  color:slategray;
-  font-family: "Alegreya", georgia, serif;
-}
-
-.pullquote--pulled:before, .pull:before{
-  content:"“";
-  font-size: 4em;
-  position: relative;
-  top: 30px;
-  right:calc(1.65rem + 10px);
-  color:orange;
-  line-height: 0;
-}
-
-.pullquote:before{
-  display: inline-block;
-  float:right;
+  border:none;
+  padding: 0;
   width: 40%;
-  font-family: "Alegreya", georgia, serif;
-  content:"“";
-  font-size: 5rem;
-  position: relative;
-  top: 3.3rem;
-  right:4rem;
-  color:orange;
-  line-height: 0;
-}
-
-.pullquote:after{
-  content: attr(data-content);
-  display: inline-block;
-  float:right;
-  width: 40%;
-  text-indent: 2.457rem;
-  margin: 1.65rem;
+  text-indent: 1.65rem;
+  margin: 1.1rem;
   font-style: italic;
   color:slategray;
   font-family: "Alegreya", Georgia, serif;
@@ -580,26 +549,52 @@ margin on the iframe, cause it breaks stuff. */
           hyphens: auto;
 }
 
+.pullquote--pulled:before, .pull:before, .p-quote:before{
+  content:"“";
+  display: inline-block;
+  width: 0;
+  font-size: 5rem;
+  position: relative;
+  top: 2.1rem;
+  right:4rem;
+  color:orange;
+  line-height: 0;
+}
+
+.p-quote:before{
+  float:right;
+  width: 40%;
+  top:3rem;
+  right:3.3rem;
+  font-family: "Alegreya", Georgia, serif;
+}
+
+.p-quote:after{
+  content: attr(data-content);
+}
+
 aside{
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   width: 40%;
   float:right;
   line-height: 1.65;
   background-color: #fff;
-  padding:3%;
-  margin:3%;
+  padding:1.1rem;
+  margin:1.65rem;
+  margin-right: 0;
   font-size:1rem;
   border:1px solid #eee;
 }
 
 aside.note:before{
   position: relative;
-  display: inline;
+  font-family: "Source Serif Pro", Georgia, serif;
+  font-weight: 900;
   color:  #ccc;
-  top:-.05em;
-  left:-.45em;
+  bottom:.55rem;
+  right:1.65rem;
   content: "*";
-  font-size:5em;
+  font-size:2.6667rem;
   line-height: 0;
   float: left;
 }
@@ -1473,11 +1468,25 @@ top: -35px;
     margin-left: 0;
   }
 
-  aside{
+  aside, .thumb{
+    display: block;
     width: auto;
-    max-width:100%;
-    margin:3% 0;
-    margin: .5em auto;
+    width: 100%;
+    min-width: 100%;
+    box-sizing: border-box;
+    margin:1.65rem auto;
+    text-align: center;
+  }
+
+  .p-quote, .p-quote:after{
+    width: auto;
+    max-width: 100%;
+    margin: 1.65rem auto;
+  }
+
+  .p-quote:before{
+    float:left;
+    top:3.3rem;
   }
 
   aside + p{
@@ -1578,11 +1587,7 @@ top: -35px;
     text-align: left;
   }
 
-  .thumb{
-    max-width:100%;
-    text-align: center;
-    margin: 0 auto;
-  }
+
 
   .thumb + p{
     margin-top: 0 !important;
@@ -1733,17 +1738,17 @@ top: -35px;
 @media print{
 
   html{
-    font-size: 55%;
+    font-size: 65%;
   }
 
   body {
-    font: 14px "Source Serif Pro", Georgia, serif;
+    font: 112.5% "Source Serif Pro", Georgia, serif;
     line-height: 1.65;
     color: #000;
   }
 
   .post, .inner{
-    width:90%;
+    width:85%;
   }
 
 /*
@@ -1764,13 +1769,14 @@ top: -35px;
 
   q:after {content: " (" attr(cite) ")"}
 
-/*// Uncomment for an even leaner print style*/
   .post-footer,
-  .site-footer,
+/*  .site-footer,*/
   .site-footer span:not(.print-data),
   .subscribe,
-  .hr:after,
+  .post-comments,
+  hr:after,
+  .open-menu,
   .share{
-    display: none;
+    display: none !important;
   }
 }
