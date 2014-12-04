@@ -1,130 +1,42 @@
-<button class="open-menu" type="button" id="modal_open">
-  <svg version="1.1" id="menu-icon-svg" xmlns="http://www.w3.org/2000/svg"
-  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px"
-  height="35px" viewBox="0 0 25 25" enable-background="new 0 0 25 25"
-  xml:space="preserve">
-  <path fill="none"/>
-  <g id="menu-icon">
-    <rect width="25" height="2"/>
-    <rect y="5" width="25" height="2"/>
-    <rect y="10" width="25" height="2"/>
-  </g>
-  <path fill="none" d="Z" />
-  <text y="23" font-size="10px" fill="slategray" font-weight="400">MENU</text>
-  </svg>
-</button>
+<!--
+THE MENU: Enabling this partial creates a hamburger icon that opens a menu. It’s responsive, lightweight, and works with javascript disabled.
+-->
 
-<div class="menu modal-overlay" id="modal_window"
-     aria-hidden="true" role="dialog"
-     aria-labelledby="menu">
-  <div class="modal-content flex-container flex-container--center" id="modal_holder" role="document">
+<!-- Trigger element, which is hidden -->
+<input type="checkbox" id="menu-trigger" />
 
-    <div class="flex-child">
-      <h1 class="typl8-beta" id="modal_title">Menu</h1><br>
-      * * *
-      <nav role="navigation" class="typl8-gamma">
-      <ul>
-        <li><a href="{{@blog.url}}">Home</a></li>
-        <li><a href="{{@blog.url}}/about">About</a></li>
-        <li><a href="{{@blog.url}}/contact">Contact</a></li>
-      </ul>
-      </nav>
-      * * *
-    </div>
+<!-- Thus label which control the trigger. The hamburger icon is a background image in      the CSS (base64 encoded svg) in main.css. Hover and close states in defer.css-->
+<label for="menu-trigger" id="open-menu" class="open-menu btn"></label>
 
-  </div> <!-- end .modal-content -->
+<!-- The menu that slides in. Styles in defer.css -->
+<nav class="menu" id="menu" role="navigation">
+  <ul>
+    <!--
+    Edit these links before enabling the menu! … or make sure you have an about and contact       page.
+    -->
+    <li><a href="{{@blog.url}}">Home</a></li>
+    <li><a href="{{@blog.url}}/about">About</a></li>
+    <li><a href="{{@blog.url}}/contact">Contact</a></li>
+  </ul>
+</nav>
 
-  <!-- Close button -->
-  <button class="btn-close" id="modal_close" type="button" aria-label="close">
-      &times;
-  </button>
-
-</div> <!-- end .modal-overlay -->
-
+<!--
+This makes the rest of the page move down with the menu for style points, but is              optional. The menu works fine with pure css.
+-->
 <script>
-// helper function to place modal window as the first child
-// of the #page node
-var m = document.getElementById('modal_window'),
-    p = document.getElementById('body');
+var navTrigger = document.getElementById("menu-trigger");
+var bodyTag = document.getElementsByTagName("body")[0];
+var menu = document.getElementById("menu");
 
-function swap () {
-  p.parentNode.insertBefore(m, p);
+navTrigger.onclick = function () {
+  if(navTrigger.checked){
+    bodyTag.classList.add("transition-1s");
+    document.getElementsByTagName("body")[0].style.marginTop = menu.clientHeight+"px";
+  }else{
+    bodyTag.classList.add("transition-1s");
+    document.getElementsByTagName("body")[0].style.marginTop = "0";
+  }
 }
-
-swap();
-// modal window
-(function() {
-
-  'use strict';
-
-  // list out the vars
-  var mOverlay = getId('modal_window'),
-      mOpen = getId('modal_open'),
-      mClose = getId('modal_close'),
-      modal = getId('modal_holder'),
-      allNodes = document.querySelectorAll("*"),
-      modalOpen = false,
-      lastFocus,
-      i;
-
-  // Let's cut down on what we need to type to get an ID
-  function getId ( id ) {
-    return document.getElementById(id);
-  }
-
-  // Let's open the modal
-  function modalShow () {
-    lastFocus = document.activeElement;
-    mOverlay.setAttribute('aria-hidden', 'false');
-    modalOpen = true;
-    modal.setAttribute('tabindex', '0');
-    modal.focus();
-  }
-
-  // binds to both the button click and the escape key to close the modal window
-  // but only if modalOpen is set to true
-  function modalClose ( event ) {
-    if (modalOpen && ( !event.keyCode || event.keyCode === 27 ) ) {
-      mOverlay.setAttribute('aria-hidden', 'true');
-      modal.setAttribute('tabindex', '-1');
-      modalOpen = false;
-      lastFocus.focus();
-    }
-  }
-
-  // Restrict focus to the modal window when it's open.
-  // Tabbing will just loop through the whole modal.
-  // Shift + Tab will allow backup to the top of the modal,
-  // and then stop.
-  function focusRestrict ( event ) {
-    if ( modalOpen && !modal.contains( event.target ) ) {
-      event.stopPropagation();
-      modal.focus();
-    }
-  }
-
-  // Close modal window by clicking on the overlay
-  mOverlay.addEventListener('click', function( e ) {
-    if (e.target == modal.parentNode) {
-       modalClose( e );
-     }
-  }, false);
-
-
-  // open modal by btn click/hit
-  mOpen.addEventListener('click', modalShow);
-
-  // close modal by btn click/hit
-  mClose.addEventListener('click', modalClose);
-
-  // close modal by keydown, but only if modal is open
-  document.addEventListener('keydown', modalClose);
-
-  // restrict tab focus on elements only inside modal window
-  for (i = 0; i < allNodes.length; i++) {
-    allNodes.item(i).addEventListener('focus', focusRestrict);
-  }
-
-})();
-
 </script>
+
+
