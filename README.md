@@ -2,7 +2,7 @@
 
 # Mnml — a Typographically Tasteful [Ghost](http://github.com/tryghost/ghost/) Blog Theme
 
-Mnml is a beautiful, responsive, content-focused theme with great typography. The use of a type-scale, responsive typography, and carefully set line provide an optimal reading experience. Mnml also features post thumbnails on the homepage, an elegant print stylesheet, code syntax highlighting, and more.
+Mnml is a beautiful, responsive, content-focused theme with great typography. The use of a type-scale, responsive typography, and carefully set line length provide an optimal reading experience. Mnml also features post thumbnails on the homepage, an elegant print stylesheet, code syntax highlighting, and more.
 
 **Mnml is being actively developed and maintained, and is compatible with the latest version of Ghost — v0.5.6**
 
@@ -24,15 +24,15 @@ Features:
   - Attractive Pullquotes
 - Responsive `<aside>` tags for interrupting yourself
 - Prism.js syntax highlighting
-- Better horozontal rules
+- Better horizontal rules
 - `.thumb` class for inline responsive thumbnails
 - Responsive post thumbnails on the homepage
 - Elegant print stylesheet
-- Robots.txt inproves SEO by removing tag listings from search engines so your content is more prominent
+- Robots.txt improves SEO by removing tag listings from search engines so your content is more prominent
 - Responsive, accessible menu for static pages (or anything else) that stays out of the way [NEW!]
 - Comments powered by Disqus, and loaded with AJAX that don’t slow down your site. [NEW!]
 - Blazing fast
-  - Thumbnails are resized automathically.
+  - Thumbnails are resized automatically.
   - Non-essential scripts and styles are loaded asynchronously or deferred
   - Comments are only loaded when needed
   - Uses the fastest math rendering library, and the fastest webfont provider [citation needed]
