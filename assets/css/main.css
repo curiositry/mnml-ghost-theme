@@ -153,8 +153,7 @@ a {
   color: #dd4814;
   transition: color ease 0.3s;
 }
-
-a:hover {
+a:hover, a:active, a.active{
   color: orange;
 }
 
@@ -202,7 +201,7 @@ strong, bold, b{
 .post-content > h4,
 .post-content > h5,
 .post-content > h5{
-  margin-top: 1.65rem;
+  margin-top: 3.3rem;
   margin-bottom: 1.1rem;
 }
 
@@ -1329,6 +1328,20 @@ aside.note:before{
   text-align: center;
   background: #F7FAFB;
   color:#aaa;
+}
+
+.site-footer nav li{
+  display:inline;
+
+}
+
+.site-footer nav li:after{
+  content:"•";
+  color:#aaa;
+  margin:.55rem;
+}
+.site-footer nav li:last-child:after{
+  content:"";
 }
 
 .site-footer a{

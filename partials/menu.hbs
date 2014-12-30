@@ -2,6 +2,7 @@
 THE MENU: Enabling this partial creates a hamburger icon that opens a menu. Itâ€™s responsive, lightweight, and works with javascript disabled.
 -->
 
+
 <!-- Trigger element, which is hidden -->
 <input type="checkbox" id="menu-trigger" />
 
@@ -14,9 +15,7 @@ THE MENU: Enabling this partial creates a hamburger icon that opens a menu. Itâ€
     <!--
     Edit these links before enabling the menu! â€¦ or make sure you have an about and contact       page.
     -->
-    <li><a href="{{@blog.url}}">Home</a></li>
-    <li><a href="{{@blog.url}}/about">About</a></li>
-    <li><a href="{{@blog.url}}/contact">Contact</a></li>
+    {{>navigation-links}}
   </ul>
 </nav>
 
@@ -24,9 +23,10 @@ THE MENU: Enabling this partial creates a hamburger icon that opens a menu. Itâ€
 This makes the rest of the page move down with the menu for style points, but is              optional. The menu works fine with pure css.
 -->
 <script>
-var navTrigger = document.getElementById("menu-trigger");
-var bodyTag = document.getElementsByTagName("body")[0];
-var menu = document.getElementById("menu");
+  var navTrigger = document.getElementById("menu-trigger");
+  var menu = document.getElementById("menu");
+  var bodyTag = document.getElementsByTagName("body")[0];
+
 
 navTrigger.onclick = function () {
   if(navTrigger.checked){
