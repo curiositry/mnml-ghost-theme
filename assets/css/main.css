@@ -1551,6 +1551,10 @@ top: -35px;
     font-size:16px;
   }
 
+  .hide-500{
+    display:none;
+  }
+
   .home-template .page-title,
   .archive-template .page-title{
     display: block;
