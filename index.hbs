@@ -2,15 +2,17 @@
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
 {{! The big featured header }}
+
 <header class="main-header">
-    <nav class="main-nav clearfix">
+    <nav class="main-nav clearfix nmt">
         {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
     </nav>
-        <div class="main-header-content inner">
-            <h1 class="page-title typl8-beta"> {{@blog.title}}</h1>
+        <div class="main-header-content">
+            <h1 class="page-title typl8-gamma"> {{@blog.title}}</h1>
             <h2 class="page-description typl8-epsilon">{{@blog.description}}</h2>
         </div>
 </header>
+<span class="clearfix"></span>
 
 {{! The main content area on the homepage }}
 <main id="content" class="content" role="main">

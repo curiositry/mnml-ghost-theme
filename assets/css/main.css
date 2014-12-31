@@ -486,6 +486,10 @@ margin on the iframe, cause it breaks stuff. */
   text-decoration: none;
 }
 
+.nmt{
+  margin-top: 0;
+}
+
 .lh-2-3{
   line-height: 1.1;
 }
@@ -687,6 +691,8 @@ aside.note:before{
 .main-header {
   text-align: center;
   padding-bottom:1.1rem;
+  padding:0 1.65rem;
+  margin-top:.55rem;
 }
 
 .main-nav,
@@ -694,6 +700,12 @@ aside.note:before{
   position: relative;
   padding:.825rem;
   padding-left: 2.475rem;
+}
+
+.home-template .main-nav,
+.archive-template .main-nav{
+  padding: 0;
+  text-align: left;
 }
 
 .post-template .main-nav--content,
@@ -723,38 +735,29 @@ aside.note:before{
   text-decoration: none;
 }
 
-.blog-logo {
-  display: block;
-  float: left;
-  background: none !important;
-  border: none !important;
-}
-
-.blog-logo img {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  display: block;
-  height: 38px;
-  padding: 1px 0 5px 0;
-  width: auto;
-}
 
 /* The details of your blog. Defined in ghost/settings/ */
 .page-title {
+  text-align:left;
+  display:inline-block;
+  float:left;
   text-transform: none;
-  text-align: center;
   font-weight: 400;
-  letter-spacing: 0 !important;
   font-family: "Source Serif Pro", Georgia, serif;
+  position: relative;
+  bottom: 1px;
 }
 
 .page-description {
-  text-transform: uppercase;
-  letter-spacing: .05em;
+  text-transform: none;
+  font-family: "Alegreya", Georgia, serif;
+  font-style: italic;
+  font-weight: 200;
   color:slategray;
-  margin: 0;
-  letter-spacing: 0;
+  display:inline-block;
+  float:left;
+  padding-left:1.65rem;
+  padding-top:.55rem;
 }
 
 
@@ -1196,11 +1199,11 @@ aside.note:before{
 }
 .author-meta span {
   display: inline-block;
-  margin: 0 2.457rem1.1rem 0;
+  padding: .55rem;
   word-wrap: break-word;
 }
 .author-meta a {
-  text-decoration: none;
+/*  text-decoration: none;*/
 }
 
 /* Turn off meta for page2+ to make room for extra
@@ -1510,10 +1513,6 @@ top: -35px;
     padding-left: 3.3rem;
   }
 
-  .main-nav--content{
-    padding:1.1rem;
-  }
-
   .blog-logo img {
     padding: 4px 0;
   }
@@ -1524,7 +1523,6 @@ top: -35px;
 
   .author-meta span {
     display: block;
-    margin: 1.65rem 0;
   }
 
   .post-thumbnail,
@@ -1555,18 +1553,28 @@ top: -35px;
 
   .home-template .page-title,
   .archive-template .page-title{
-    font-size:48px;font-size:2.6667rem;margin-bottom:.61875rem
+    display: block;
+    font-size:2.6667rem;
+    width: 100%;
+  }
+
+  .page-description{
+    font-size:2rem;
+    width: 100%;
+    display: block !important;
+    float:none;
+    padding-left: 0;
   }
 
   .archive-template .main-header,
   .home-template .main-header{
     text-align: left;
-    padding-left: 3.3rem;
+    padding: 1.65rem 3.3rem;
+    position:relative;
+    display: block;
+    width: 80%;
   }
 
-  .main-header{
-    padding: 0;
-  }
 
   .main-header,
   .main-header--content{
@@ -1589,8 +1597,6 @@ top: -35px;
   .archive-template .page-title{
     text-align: left;
   }
-
-
 
   .thumb + p{
     margin-top: 0 !important;
@@ -1683,6 +1689,7 @@ top: -35px;
   }
 
   .post-footer .author {
+    width: 100%;
     margin: 0 0 2.457rem 0;
     padding: 0 0 1.6rem 0;
     border-bottom: #EBF2F6 1px dashed;

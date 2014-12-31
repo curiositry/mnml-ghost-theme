@@ -9,9 +9,6 @@
 
 
 <br clear="all"><br>
-
-
-
     <section class="author-profile inner">
         {{#if image}}
         <figure class="author-image">
@@ -22,9 +19,9 @@
         <em class="author-bio">{{bio}}</em>
         <div class="author-meta">
             {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
-            {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
+            {{#if website}}<span class="author-link icon-link">&nbsp;<a href="{{website}}">{{website}}</a></span>{{/if}}
             <span class="author-stats"><i class="icon-stats"></i> {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
-            <span class="author-rss"><i class="icon-feed"></i><a href="/rss"> {{name}}</a></span>
+            <span class="author-rss"><i class="icon-feed"></i> &nbsp;<a href="/rss">{{name}}</a></span>
         </div>
     </section>
 {{/author}}
