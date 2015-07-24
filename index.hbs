@@ -3,15 +3,17 @@
 
 {{! The big featured header }}
 <header class="main-header">
-    <nav class="main-nav clearfix nmt">
-        {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
-    </nav>
-        <div class="main-header-content">
-            <h1 class="page-title typl8-gamma"> {{@blog.title}}</h1>
-            <h2 class="page-description typl8-epsilon">{{@blog.description}}</h2>
-        </div>
+  <nav class="main-nav clearfix nmt">
+    {{#if @blog.logo}}<a class="blog-logo"  href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" style="max-height:2.5rem;display:inline;float:left;padding-right:1.1rem;padding-top:0.25rem"/></a>{{/if}}
+
+    <div class="main-header-content">
+        <h1 class="page-title typl8-gamma"> {{@blog.title}}</h1>
+        <h2 class="page-description typl8-epsilon">{{@blog.description}}</h2>
+    </div>
+    <br clear="all">
+  </nav>
 </header>
-<br><hr class="plain-hr hide-500" style="margin-top:1.2rem;">
+
 
 
 {{! The main content area on the homepage }}
