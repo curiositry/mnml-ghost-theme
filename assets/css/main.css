@@ -135,7 +135,8 @@ h4, h5, h6,
 main-nav a,
 .post-meta,
 .site-footer,
-.pagination{
+.pagination,
+.sans-serif{
     font-family: "Source Sans Pro", Helvetica, sans-serif;
 }
 
@@ -633,7 +634,7 @@ aside.note:before{
   background: -ms-linear-gradient(top, #dd4814 0%, #c23202 100%);
   background: linear-gradient(to bottom, #dd4814 0%, #c23202 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd4814', endColorstr='#c23202', GradientType=0 );
-  padding: 1% 3%;
+  padding: .55rem 1.1rem;
   text-indent: 0;
   text-decoration: none;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -689,10 +690,22 @@ aside.note:before{
    ========================================================================== */
 
 .main-header {
+  display: block;
+  height: 100%;
   text-align: center;
-  padding-bottom:1.1rem;
-  padding:0 1.65rem;
+  padding:1.1rem 0;
   margin-top:.55rem;
+  border-bottom: #e0e4e7 1px solid;
+  max-width:850px !important;
+  width: 80%;
+  padding: relative;
+  margin: 0 auto;
+}
+
+.home-template .main-header--content,
+.archive-template .main-header--content{
+  padding-left: 0;
+  margin-left: 0;
 }
 
 .main-nav,
@@ -711,7 +724,7 @@ aside.note:before{
 .post-template .main-nav--content,
 .page-template .main-nav--content{
   position: relative;
-  width: 80%;
+  width: 100%;
   max-width: 780px;
   padding-left: .55rem;
   margin: auto;
@@ -741,11 +754,13 @@ aside.note:before{
   text-align:left;
   display:inline-block;
   float:left;
+  color: #444;
   text-transform: none;
   font-weight: 400;
   font-family: "Source Serif Pro", Georgia, serif;
-  position: relative;
-  bottom: 1px;
+  padding-right: 1.65rem;
+  margin-bottom: 0;
+  box-sizing: border-box;
 }
 
 .page-description {
@@ -756,16 +771,25 @@ aside.note:before{
   color:slategray;
   display:inline-block;
   float:left;
-  padding-left:1.65rem;
+  margin-bottom: 0;
+  
   padding-top:.55rem;
+}
+
+.tag-template .page-title,
+.tag-template .page-description{
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding-left: 0;
 }
 
 
 /* The hamburger menu icon — the styles for the open menu are deferred */
 .open-menu, .open-menu:hover {
   position: absolute;
-  top:.55rem;
-  right:1em;
+  top:.825rem;
+  right:1.1em;
   width: 30px;
   height: 30px;
   padding: 0;
@@ -1507,6 +1531,14 @@ top: -35px;
     height: auto;
   }
 
+  .page-title,
+  .page-description{
+/*    display: block;*/
+    width: 100%;
+    text-align: left;
+    clear: both;
+  }
+
   .main-nav,
   .main-nav--content{
     right:.55rem;
@@ -1551,8 +1583,14 @@ top: -35px;
     font-size:16px;
   }
 
-  .hide-500{
-    display:none;
+  input{
+    padding: .55rem 0;
+    box-sizing: border-box;
+    margin: .825rem;
+  }
+
+  .btn{
+    padding: 1.1rem 0;
   }
 
   .home-template .page-title,
@@ -1573,18 +1611,16 @@ top: -35px;
   .archive-template .main-header,
   .home-template .main-header{
     text-align: left;
-    padding: 1.65rem 3.3rem;
+    padding: 2rem 0 0 3.3rem;
     position:relative;
     display: block;
     width: 80%;
   }
 
-
   .main-header,
   .main-header--content{
     width: 100% !important;
     right:0;
-    border-bottom: #e0e4e7 1px solid;
     padding-left: 1.1rem;
   }
 
