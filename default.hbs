@@ -34,9 +34,7 @@
       </a>
 <!--  Uncomment if you want a copy of your navigation in the footer. It’s pretty cool, and gives your visitors something to do when they finish an article other than commenting, sharing, or closing the tab.    -->
       <nav role="navigation">
-        <ul>
-          {{>navigation-links}}
-        </ul>
+        {{>navigation}}
       </nav>
       <section>
         <span class="print-data copyright-notice">
@@ -62,7 +60,10 @@
     <!--
     This generates a handsome modal menu and hamburger icon. If you want to use it, edit     menu.hbs and add your links (line ~146), then remove the ! from this helper to           activate it.
     -->
-    {{!>menu}}
+    {{#if @blog.navigation}}
+      {{>menu}}
+    {{/if}}
+    
 
     <!-- Ghost outputs important scripts and data with this tag -->
     {{ghost_foot}}
