@@ -1,4 +1,4 @@
-![Ghost Compatability](http://img.shields.io/badge/Compatible%20with%20Ghost-v0.6.4-brightgreen.svg)
+![Ghost Compatability](http://img.shields.io/badge/Compatible%20with%20Ghost-v0.7.x-brightgreen.svg)
 
 # Mnml — a Typographically Tasteful [Ghost](http://github.com/tryghost/ghost/) Blog Theme
 
@@ -9,12 +9,11 @@ Mnml is a beautiful, responsive, content-focused theme with great typography. Th
 If you have a question or have found a bug please **open an issue** and help as soon as possible; if you like this theme, or use it on your blog, make me happy by **starring the project**, or spreading the word!
 
 ### See mnml in the wild!
-- [Autodidacts.io](http://autodidacts.io) almost always runs the latest version (what I made mnml for)
 - [mnml.herokuapp.com](http://mnml.herokuapp.com) Site for the theme. Runs latest official *release* or newer
 
 Features:
 
-- Compatible with the latest version of Ghost (v0.5.10)
+- Compatible with the latest version of Ghost
 - Totally responsive
 - Perfect readability — MNML features a type-scale, responsive typography, and carefully set line length for the best reading experience.
 - Great Typography
