@@ -88,10 +88,11 @@
       else window.addEventListener('load', cb);
     </script>
 
+    {{! jQuery — hardly used and soon to be removed}}
+    <script async src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     {{! The main JavaScript file for Mnml }}
-<!--<script async type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>-->
-    <script async type="text/javascript" src="{{asset "js/index.js"}}"></script>
-    <script defer type="text/javascript" src="{{asset "js/prism.min.js"}}"></script>
+    <script async src="{{asset "js/index.js"}}"></script>
+    <script defer src="{{asset "js/prism.min.js"}}"></script>
 
 </body>
 </html>
