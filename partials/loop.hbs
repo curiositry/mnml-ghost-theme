@@ -25,12 +25,13 @@
         }
 
         function homepagePostThumbnail (imgUrl) {
-            if (!imgUrl.contains("http://") && !imgUrl.contains("https://")) {
-              fireSizeUrl = "http://firesize.com/x150/g_center/{{@blog.url}}";
-            } else {
-              fireSizeUrl = "http://firesize.com/x150/g_center/";
-            }
-            thumbnailContainer.innerHTML = '<img src="'+fireSizeUrl+imgUrl+'" alt="{{title}}" />';
+            // Firesize has folded … still looking for an alternative.
+            // if (!imgUrl.contains("http://") && !imgUrl.contains("https://")) {
+            //   fireSizeUrl = "http://firesize.com/x150/g_center/{{@blog.url}}";
+            // } else {
+            //   fireSizeUrl = "http://firesize.com/x150/g_center/";
+            // }
+            thumbnailContainer.innerHTML = '<img src="'+imgUrl+'" alt="{{title}}" />';
         };
         homepagePostThumbnail("{{image}}");
       } //end mediaquery if
