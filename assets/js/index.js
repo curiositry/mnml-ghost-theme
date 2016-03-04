@@ -1,11 +1,3 @@
-function ready(fn) {
-  if (document.readyState != 'loading'){
-    fn();
-  } else {
-    document.addEventListener('DOMContentLoaded', fn);
-  }
-}
-
 function previousElementSibling( elem ) {
   do {
     elem = elem.previousSibling;
@@ -33,10 +25,7 @@ function pullPullQuotes(){
   }
 }
 
-ready(pullPullQuotes());
-
-
-
+document.addEventListener('DOMContentLoaded', pullPullQuotes());
 
 
 
