@@ -4,5 +4,16 @@
       <a href="{{url absolute="true"}}">{{label}}</a>
     </li>
     {{/foreach}}
+    {{! Social media links }}
+    {{#if @blog.facebook}}
+    <span class="meta-spacer"></span>
+      <li class="nav-{{facebook_url}}{{#if current}} nav-current{{/if}}" role="presentation">
+        <a href="{{facebook_url}}"><span class="icon-facebook"></span></a>
+      </li>
+    {{/if}}
+    {{#if @blog.twitter}}
+      <li class="nav-{{twitter_url}}{{#if current}} nav-current{{/if}}" role="presentation">
+        <a href="{{twitter_url}}"><span class="icon-twitter"></span></a>
+      </li>
+    {{/if}}
 </ul>
-
