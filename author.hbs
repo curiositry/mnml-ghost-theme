@@ -20,8 +20,21 @@
         <div class="author-meta">
             {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
             {{#if website}}<span class="author-link icon-link">&nbsp;<a href="{{website}}">{{website}}</a></span>{{/if}}
+
+
+
             <span class="author-stats"><i class="icon-stats"></i> {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
-            <span class="author-rss"><i class="icon-feed"></i> &nbsp;<a href="/rss">{{name}}</a></span>
+
+            <br>
+
+            <!-- <span class="author-rss"><i class="icon-feed"></i> &nbsp;<a href="/rss">{{name}}</a></span>
+
+            {{#if twitter}}<span class="icon-twitter author-link ">&nbsp;<a href="{{twitter_url}}">{{twitter}}</a></span>{{/if}}
+            {{#if facebook}}<span class="icon-facebook author-link ">&nbsp;<a href="{{facebook_url}}">{{facebook}}</a></span>{{/if}} -->
+
+            <span class="author-rss"> &nbsp;<a href="/rss"><i class="icon-feed"></i></a></span>
+            {{#if twitter}}&nbsp;<a href="{{twitter_url}}"><i class="icon-twitter"></i></a>&nbsp;{{/if}}
+            {{#if facebook}}&nbsp;&nbsp;<a href="{{facebook_url}}"><i class="icon-facebook"></i></a>{{/if}}
         </div>
     </section>
 {{/author}}
