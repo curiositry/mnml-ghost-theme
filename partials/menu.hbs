@@ -25,13 +25,11 @@ This makes the rest of the page move down with the menu for style points, but is
 
 navTrigger.onclick = function () {
   if(navTrigger.checked){
-    bodyTag.classList.add("transition-1s");
+    bodyTag.classList.add("menu-transition");
     document.getElementsByTagName("body")[0].style.marginTop = menu.clientHeight+"px";
   }else{
-    bodyTag.classList.add("transition-1s");
+    bodyTag.classList.add("menu-transition");
     document.getElementsByTagName("body")[0].style.marginTop = "0";
   }
 }
 </script>
-
-

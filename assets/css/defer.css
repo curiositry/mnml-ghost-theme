@@ -118,9 +118,9 @@ code[class*=language-],pre[class*=language-]{color:#000;text-shadow:0 1px #fff;f
   width: 100%;
   padding: 0 1.65rem;
   text-align: center;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
   box-sizing: border-box;
 
   box-shadow: 0 -5px 20px -10px lightslategray inset;
@@ -129,9 +129,9 @@ code[class*=language-],pre[class*=language-]{color:#000;text-shadow:0 1px #fff;f
 
 #menu-trigger:checked ~ nav{
   top:-.825rem;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .menu li{

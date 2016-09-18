@@ -505,12 +505,12 @@ margin on the iframe, cause it breaks stuff. */
   font-variant: small-caps;
 }
 
-.transition-1s{
-  -webkit-transition: 1s;
-  -moz-transition: 1s;
-  -ms-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
+.menu-transition {
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .flex-container{
