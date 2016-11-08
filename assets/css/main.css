@@ -710,7 +710,7 @@ aside.note:before{
 }
 
 .home-template .main-header--content,
-.archive-template .main-header--content{
+.paged .main-header--content{
   padding-left: 0;
   margin-left: 0;
 }
@@ -723,7 +723,7 @@ aside.note:before{
 }
 
 .home-template .main-nav,
-.archive-template .main-nav{
+.paged .main-nav{
   padding: 0;
   text-align: left;
 }
@@ -855,7 +855,7 @@ aside.note:before{
 }
 
 .home-template .post,
-.archive-template .post,
+.paged .post,
 .tag-template .post,
 .author-template .post{
   max-width:850px;
@@ -1251,7 +1251,7 @@ aside.note:before{
 
 /* Turn off meta for page2+ to make room for extra
  pagination prev/next links */
-.archive-template .author-profile .author-meta {
+.paged .author-profile .author-meta {
   display: none;
 }
 
@@ -1351,12 +1351,12 @@ aside.note:before{
 }
 
 /* On page2+ make all the headers smaller */
-.archive-template .main-header {
+.paged .main-header {
   max-height: 30%;
 }
 
 /* On page2+ show extra pagination controls at the top of post list */
-.archive-template .extra-pagination {
+.paged .extra-pagination {
   display: block;
 }
 
@@ -1491,9 +1491,9 @@ top: -35px;
   .home-template .post,
   .home-template .inner,
   .home-template .pagination,
-  .archive-template .post,
-  .archive-template .inner,
-  .archive-template .pagination{
+  .paged .post,
+  .paged .inner,
+  .paged .pagination{
     max-width: 850px;
   }
 */
@@ -1627,7 +1627,7 @@ top: -35px;
   }
 
   .home-template .page-title,
-  .archive-template .page-title{
+  .paged .page-title{
     display: block;
     font-size:2.6667rem;
     width: 100%;
@@ -1641,7 +1641,7 @@ top: -35px;
     padding-left: 0;
   }
 
-  .archive-template .main-header,
+  .paged .main-header,
   .home-template .main-header{
     text-align: left;
     padding: 2rem 0 1.5rem 4rem;
@@ -1666,7 +1666,7 @@ top: -35px;
   }
 
   .home-template .page-title,
-  .archive-template .page-title{
+  .paged .page-title{
     text-align: left;
   }
 
@@ -1679,7 +1679,7 @@ top: -35px;
   }
 
   .home-template .open-menu,
-  .archive-template .open-menu{
+  .paged .open-menu{
     top:2.457rem;
 
   }
