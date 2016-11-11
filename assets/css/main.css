@@ -332,9 +332,9 @@ mark {
 }
 
 code, tt {
-  padding: 1px 3px;
+  padding: 0.15em 0.3em;
   font-family: Inconsolata, monospace, sans-serif;
-  font-size: 0.857rem;
+  font-size: 0.857em;
   white-space: pre-wrap;
   border: #E3EDF3 1px solid;
   background: #F7FAFB;
@@ -348,7 +348,7 @@ pre {
   width: 100%;
   padding: 10px;
   font-family: Inconsolata, monospace, sans-serif;
-  font-size: 0.857rem;
+  font-size: 0.8em;
   white-space: pre;
   overflow: auto;
   background: #F7FAFB;
@@ -369,9 +369,7 @@ code[class*="language-"]{
   font-family: Inconsolata, monospace, sans-serif !important;
   text-shadow: none !important;
   color: #333 !important;
-  padding: 1px 3px !important;
 }
-
 
 pre code, tt {
   font-size: inherit;
