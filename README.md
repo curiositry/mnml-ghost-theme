@@ -4,7 +4,7 @@
 
 Mnml is a beautiful, responsive, content-focused theme with great typography. The use of a type-scale, responsive typography, and carefully set line-length provide an optimal reading experience. Mnml also features post thumbnails on the homepage, an elegant print stylesheet, code syntax highlighting, and more.
 
-**Like what you see? Check out [Laminim](https://creativemarket.com/Curiositry/1037280-Laminim-%E2%80%94-Ghost-Theme-for-Bloggers), a ghost theme for serious bloggers.**
+**[SHAMELESS PLUG] If you like MNML, check out [Laminim](https://creativemarket.com/Curiositry/1037280-Laminim-%E2%80%94-Ghost-Theme-for-Bloggers), my new ghost theme for serious bloggers.**
 
 If you have a question or have found a bug please **open an issue** and I’ll try to help as soon as possible; if you like this theme, or use it on your blog, make me happy by **starring the project**, or spreading the word!
 
