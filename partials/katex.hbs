@@ -4,12 +4,12 @@ if (mathAreas){
   var ss = document.createElement("link");
   ss.type = "text/css";
   ss.rel = "stylesheet";
-  ss.href = "//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css";
+  ss.href = "//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css";
   document.getElementsByTagName("head")[0].appendChild(ss);
 
   var script = document.createElement( 'script' );
   script.type = 'text/javascript';
-  script.src = '//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js';
+  script.src = '//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.js';
   document.body.appendChild(script);
 
   window.onload = function() {
@@ -17,7 +17,7 @@ if (mathAreas){
       document.getElementsByClassName("math"),
       function(el) {
         try {
-          katex.render(el.innerHTML, el);
+          katex.render(el.innerHTML, el, { displayMode: true });
         } catch (e) { console.log(e); }
       }
     );
