@@ -17,29 +17,32 @@ code[class*=language-],pre[class*=language-]{color:#000;text-shadow:0 1px #fff;f
 
 /* Import the font file with the icons in it */
 @font-face {
-    font-family: "icons";
-    src:url("../fonts/icons.eot");
-    src:url("../fonts/icons.eot?#iefix") format("embedded-opentype"),
-        url("../fonts/icons.woff") format("woff"),
-        url("../fonts/icons.ttf") format("truetype"),
-        url("../fonts/icons.svg#icons") format("svg");
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'icons';
+  src:  url('../fonts/icons.eot?8gxuuu');
+  src:  url('../fonts/icons.eot?8gxuuu#iefix') format('embedded-opentype'),
+    url('../fonts/icons.ttf?8gxuuu') format('truetype'),
+    url('../fonts/icons.woff?8gxuuu') format('woff'),
+    url('../fonts/icons.svg?8gxuuu#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
-/* Apply these base styles to all icons */
-[class^="icon-"]:before, [class*=" icon-"]:before {
-    font-family: "icons", Fira Sans, "Open Sans", sans-serif;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    text-decoration: none !important;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  text-decoration: none !important;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
 
 /* Each icon is created by inserting the correct character into the
    content of the :before pseudo element. Like a boss. */
@@ -72,6 +75,12 @@ code[class*=language-],pre[class*=language-]{color:#000;text-shadow:0 1px #fff;f
 .icon-link:before {
     content: "\e008";
 }
+.icon-linkedin:before {
+  content: "\e009";
+}
+
+
+
 
 
 /* FONTS */
