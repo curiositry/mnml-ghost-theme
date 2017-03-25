@@ -1202,6 +1202,10 @@ aside.note:before{
   color: #d34836;
 }
 
+.icon-linkedin{
+  color: #0077B5;
+}
+
 .share .icon-twitter,
 .author-profile .icon-twitter,
 .icon-twitter:hover{
