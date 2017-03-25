@@ -763,7 +763,8 @@ aside.note:before{
   text-transform: none;
   font-weight: 400;
   font-family: "Source Serif Pro", Georgia, serif;
-  padding: 0.55rem 1.65rem 0rem 0 ;
+  padding: 0.55rem 1.65rem 0rem 0;
+  padding-right: 50px; /* Hack to prevent menu icon from overlapping really long titles */
   margin-bottom: 0;
   box-sizing: border-box;
 }
