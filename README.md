@@ -1,4 +1,4 @@
-![Ghost Compatability](http://img.shields.io/badge/Compatible%20with%20Ghost-v0.11.x-brightgreen.svg)
+![Ghost Compatability](http://img.shields.io/badge/Compatible%20with%20Ghost-v0.11.x%20+-brightgreen.svg)
 
 # Mnml — a Typographically Tasteful [Ghost](http://github.com/tryghost/ghost/) Blog Theme
 
