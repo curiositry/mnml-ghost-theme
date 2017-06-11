@@ -11,7 +11,7 @@
         <h2 class="post-title typl8-gamma"><a href="{{url}}">{{{title}}}</a></h2>
     </header>
 
-    {{#if image}}
+    {{#if feature_image}}
     <div class="post-thumbnail" id="{{url}}-post-thumbnail">
       <script type="text/javascript">
       var mq = window.matchMedia( "(min-width: 500px)" );
@@ -33,7 +33,7 @@
             // }
             thumbnailContainer.innerHTML = '<img src="'+imgUrl+'" style="max-height: 160px;" alt="{{title}}" />';
         };
-        homepagePostThumbnail("{{image}}");
+        homepagePostThumbnail("{{feature_image}}");
       } //end mediaquery if
       </script>
 
@@ -45,7 +45,7 @@
         <p>{{excerpt words="30"}} <span style="color:#ccc;">…</span><a class="read-more" href="{{url}}"> <span>&raquo;</span> </a></p>
     </div>
     <footer class="post-meta">
-<!--        {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="Author image" nopin="nopin" />{{/if}}-->
+<!--        {{#if author.profile_image}}<img class="author-thumb" src="{{author.profile_image}}" alt="Author image" nopin="nopin" />{{/if}}-->
         By {{author}}
         <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMM Do YYYY"}}</time>
         {{tags prefix=" &bull; "}}
