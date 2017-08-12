@@ -180,7 +180,7 @@ strong, bold, b{
    than indent. */
 
 
-.post-content > p + p,
+.post-content > .kg-card-markdown > p + p,
 .post-content .thumb + p,
 .post-content aside + p{
   text-indent:1.65em;
@@ -192,16 +192,16 @@ strong, bold, b{
 }
 
 
-.post-content > h1,
-.post-content > h2,
-.post-content > h3{
+.post-content h1,
+.post-content h2,
+.post-content h3{
   margin-top: 2.857rem;
   margin-bottom: 1.65rem;
 }
 
-.post-content > h4,
-.post-content > h5,
-.post-content > h6{
+.post-content h4,
+.post-content h5,
+.post-content h6{
   margin-top: 3.3rem;
   margin-bottom: 1.1rem;
 }
@@ -949,7 +949,7 @@ aside.note:before{
   max-width:250px;
 }
 
-.post-content > p:first-child:first-letter{
+.post-content > .kg-card-markdown > p:first-child:first-letter{
   font-size:4rem;
   margin:.55rem .55rem 0 0;
   line-height: 1;
@@ -964,7 +964,7 @@ aside.note:before{
 */
 }
 
-.post-content > p:first-child:first-line{
+.post-content > .kg-card-markdown > p:first-child:first-line{
   -moz-font-feature-settings: "smcp=1";
   -moz-font-feature-settings: "smcp";
   -ms-font-feature-settings: "smcp";
@@ -1677,7 +1677,7 @@ top: -35px;
     display: none;
   }
 
-  .post-content > p:first-child:first-letter{
+  .post-content > .kg-card-markdown > p:first-child:first-letter{
     font-size:5rem;
     line-height: .965;
   }
@@ -1916,7 +1916,7 @@ top: -35px;
       display: none;
   }
 
-  .post-content > p:first-child:first-letter{
+  .post-content > .kg-card-markdown > p:first-child:first-letter{
     font-size:6.5rem;
     line-height: .965;
   }
