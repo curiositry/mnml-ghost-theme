@@ -1134,6 +1134,14 @@ aside.note:before{
   margin-top: 2em !important;
 }
 
+figcaption {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  text-align: center;
+  margin-top: -12px;
+  padding: 0.5rem;
+  font-size: 0.825rem;
+}
+
 /* The author credit area after the post */
 .post-footer {
   position: relative;
