@@ -2,9 +2,9 @@
   "name": "mnml",
   "description": "A minimal, responsive, fast ghost blog theme with great typography. Comes with Disqus comments, syntax highlighting, and KaTeX for mathematics, and more.",
   "demo": "http://mnml.herokuapp.com",
-  "version": "4.1.0",
+  "version": "4.2.0",
   "engines": {
-      "ghost": ">=1.25.1"
+      "ghost": ">=2.0.0"
   },
   "author": {
       "name": "Curiositry",
@@ -27,7 +27,8 @@
       "responsive",
       "ghost",
       "minimal",
-      "theme"
+      "theme",
+      "ghost-theme"
   ],
   "repository": {
       "type": "git",
