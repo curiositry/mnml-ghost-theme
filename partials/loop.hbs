@@ -46,7 +46,7 @@
     </div>
     <footer class="post-meta">
 <!--        {{#if primary_author.profile_image}}<img class="author-thumb" src="{{primary_author.profile_image}}" alt="Author image" nopin="nopin" />{{/if}}-->
-        By {{primary_author}}
+        By {{#primary_author}}<a href="{{url}}">{{name}}</a>{{/primary_author}}
         <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMM Do YYYY"}}</time>
         {{tags prefix=" &bull; "}}
     </footer>
