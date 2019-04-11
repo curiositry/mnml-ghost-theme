@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{@site.lang}}">
 <head>
     {{! Document Settings }}
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     {{! Page Meta }}
-    <title>{{meta_title}}{{#is "post, page"}} — {{@blog.title}}{{/is}}</title>
+    <title>{{meta_title}}{{#is "post, page"}} — {{@site.title}}{{/is}}</title>
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,7 +26,7 @@
     {{{body}}}
 
     <footer class="site-footer">
-      <a class="subscribe icon-feed" href="{{@blog.url}}/rss/">
+      <a class="subscribe icon-feed" href="{{@site.url}}/rss/">
        <span class="tooltip">Subscribe!</span>
       </a>
 <!--  Uncomment if you want a copy of your navigation in the footer. It’s pretty cool, and gives your visitors something to do when they finish an article other than commenting, sharing, or closing the tab.    -->
@@ -36,7 +36,7 @@
       <div>
         <span class="print-data copyright-notice">
           &copy; {{date format="YYYY"}}
-          <a href="{{@blog.url}}/">{{@blog.title}}</a>
+          <a href="{{@site.url}}/">{{@site.title}}</a>
           &nbsp;&bull;&nbsp;
         </span>
 
@@ -57,7 +57,7 @@
     <!--
     This generates a handsome modal menu and hamburger icon. If you want to use it, edit     menu.hbs and add your links (line ~146), then remove the ! from this helper to           activate it.
     -->
-    {{#if @blog.navigation}}
+    {{#if @site.navigation}}
       {{>menu}}
     {{/if}}
 
