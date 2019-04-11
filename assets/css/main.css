@@ -1175,6 +1175,22 @@ figure.kg-embed-card * {
   margin-right: auto;
 }
 
+/* IMAGE GALLERY STYLES */
+/* ==================== */
+
+/* Style at will... */
+/* .kg-gallery-card { } */
+/* .kg-gallery-container { } */
+/* .kg-gallery-row { } */
+/* .kg-gallery-image { } */
+
+/*
+Docs can be found here: http://themes.ghost.org/docs/ghost-editor#section-gallery-card
+
+The implementation that Ghost recommends is pretty robust, with one caveat: it needs a few lines of JavaScrpt. Example can be found here:
+https://github.com/TryGhost/Casper/pull/475/files#diff-ce5e030f2e2e2a50f18199464f07ea70
+*/
+
 /* The author credit area after the post */
 .post-footer {
   position: relative;
