@@ -1174,22 +1174,55 @@ figure.kg-embed-card * {
   margin-left: auto;
   margin-right: auto;
 }
+.kg-image-card,
+.kg-gallery-card {
+  margin: 0 0 1.5rem;
+}
 
-/* IMAGE GALLERY STYLES */
-/* ==================== */
+.kg-image-card figcaption,
+.kg-gallery-card figcaption {
+  margin: -1.0rem 0 1.5rem;
+}
 
-/* Style at will... */
-/* .kg-gallery-card { } */
-/* .kg-gallery-container { } */
-/* .kg-gallery-row { } */
-/* .kg-gallery-image { } */
+.kg-gallery-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0.25rem auto;
+  width: 100vw;
+  max-width: 100%;
+}
 
-/*
-Docs can be found here: http://themes.ghost.org/docs/ghost-editor#section-gallery-card
+ /* These let you manually create galleries that are post-width or full-bleed,
+ rather than the default wider-but-not-full-bleed width. */
+.kg-width-wide .kg-gallery-container {
+  max-width: 850px;
+}
 
-The implementation that Ghost recommends is pretty robust, with one caveat: it needs a few lines of JavaScrpt. Example can be found here:
-https://github.com/TryGhost/Casper/pull/475/files#diff-ce5e030f2e2e2a50f18199464f07ea70
-*/
+.kg-width-full .kg-gallery-container {
+  max-width: 100vw;
+}
+
+.kg-gallery-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.kg-gallery-image img {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  cursor: -webkit-zoom-in;
+}
+
+.kg-gallery-row:not(:first-of-type) {
+  margin: 0.25rem 0 0 0;
+}
+
+.kg-gallery-image:not(:first-of-type) {
+  margin: 0 0 0 0.25rem;
+}
 
 /* The author credit area after the post */
 .post-footer {
