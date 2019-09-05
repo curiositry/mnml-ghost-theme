@@ -137,7 +137,8 @@ main-nav a,
 .post-meta,
 .site-footer,
 .pagination,
-.sans-serif{
+.sans-serif,
+.kg-bookmark-container {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
 }
 
@@ -1224,6 +1225,77 @@ figure.kg-embed-card * {
   margin: 0 0 0 0.25rem;
 }
 
+/* Bookmark Card Styles */
+/* Bookmark Card */
+.kg-bookmark-container {
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  color: #444;
+  text-decoration: none;
+  border: 3px solid #e0e0e0;
+  border-radius: 0.15rem;
+}
+
+.kg-bookmark-container:hover,
+.kg-bookmark-container:active,
+.kg-bookmark-container:focus {
+  border: 3px solid #ccc;
+  background-color: #f5f5f5;
+}
+
+
+.kg-bookmark-content {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: 50%;
+  padding: 1rem;
+}
+
+.kg-bookmark-title {
+  font-weight: 700;
+  color: #dd4814;
+}
+
+.kg-bookmark-container:hover .kg-bookmark-title {
+  color: orange;
+}
+
+.kg-bookmark-description,
+.kg-bookmark-metadata {
+  line-height: 1.25;
+  font-size: 0.8em;
+  color: #444 !important;
+}
+
+.kg-bookmark-thumbnail {
+  margin-top: 0;
+  flex-basis: 15rem;
+  flex-grow: 1;
+  text-align: right;
+}
+
+.kg-bookmark-thumbnail img {
+  object-fit: cover;
+  height: 100%;
+  cursor: pointer !important;
+  padding: 0;
+}
+
+.kg-bookmark-icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 0.5rem !important;
+  vertical-align: bottom;
+  display: inline-block !important;
+  padding: 0 !important;
+}
+
+.kg-bookmark-author:after {
+  content: "•";
+  margin: 0 6px;
+}
+
 /* The author credit area after the post */
 .post-footer {
   position: relative;
@@ -2026,6 +2098,15 @@ top: -35px;
     line-height: .965;
   }
 
+
+  .kg-bookmark-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .kg-bookmark-content {
+    order: 2;
+  }
 }
 
 
