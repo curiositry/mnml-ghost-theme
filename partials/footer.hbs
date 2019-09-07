@@ -1,0 +1,30 @@
+<footer class="site-footer">
+  <a class="subscribe icon-feed" href="{{@site.url}}/rss/">
+   <span class="tooltip sans-serif">Subscribe!</span>
+  </a>
+<!--  Uncomment if you want a copy of your navigation in the footer. It’s pretty cool, and gives your visitors something to do when they finish an article other than commenting, sharing, or closing the tab.    -->
+  <nav>
+    {{navigation}}
+  </nav>
+  <div class="site-footer__attribution">
+    <span class="print-data copyright-notice">
+      &copy; {{date format="YYYY"}}
+      <a href="{{@site.url}}/">{{@site.title}}</a>
+      &nbsp;&bull;&nbsp;
+    </span>
+
+    <span>
+      <a href="http://github.com/curiositry/mnml-ghost-theme">MNML</a>
+      theme by
+      <a href="http://curiositry.github.io">Curiositry</a>
+    </span>
+
+    <span>
+      &nbsp;&bull;&nbsp;
+      Published with
+      <a href="https://ghost.org">
+        &nbsp;<span class="icon-ghost typl8-zeta"></span> Ghost
+      </a>
+    </span>
+  </div>
+</footer>

@@ -1618,21 +1618,20 @@ figure.kg-embed-card * {
   border-top: #EBF2F6 1px solid;
   text-align: center;
   background: #F7FAFB;
-  color:#aaa;
+  color: #aaa;
 }
 
 .site-footer nav li{
   display:inline;
-
 }
 
 .site-footer nav li:after{
   content:"•";
-  color:#aaa;
-  margin:.55rem;
+  color: #aaa;
+  margin: .55rem;
 }
-.site-footer nav li:last-child:after{
-  content:"";
+.site-footer nav li:last-child::after{
+  content: "";
 }
 
 .site-footer a{
@@ -1641,7 +1640,11 @@ figure.kg-embed-card * {
 }
 
 .site-footer a:hover{
-  color:orange;
+  color: orange;
+}
+
+.site-footer__attribution {
+  font-size: 1rem;
 }
 
 /* The subscribe icon on the footer */
