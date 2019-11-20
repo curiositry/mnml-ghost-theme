@@ -1296,6 +1296,9 @@ figure.kg-embed-card * {
   margin: 0 6px;
 }
 
+.kg-bookmark-card { /* This is required for theme validation */ } 
+.kg-bookmark-publisher { /* This is required for theme validation */ }
+
 /* The author credit area after the post */
 .post-footer {
   position: relative;
