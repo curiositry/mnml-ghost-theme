@@ -6,25 +6,23 @@
     {{/foreach}}
 
     {{! Membership links }}
-    {{#unless isSecondary}}
-      {{#if @labs.members}}
-        {{#if @member}}
-        <li>
-          <a href="{{@site.url}}/account">Account</a>
-        </li>
-        <li>
-          <button role="link" data-members-signout>Sign out</button>
-        </li>
-        {{else}}
-        <li>
-          <a href="{{@site.url}}/signin">Log in</a>
-        </li>
-        <li>
-          <a href="{{@site.url}}/signup">Subscribe</a>
-        </li>
-        {{/if}}
+    {{#if @labs.members}}
+      {{#if @member}}
+      <li>
+        <a href="{{@site.url}}/account">Account</a>
+      </li>
+      <li>
+        <button role="link" data-members-signout>Sign out</button>
+      </li>
+      {{else}}
+      <li>
+        <a href="{{@site.url}}/signin">Log in</a>
+      </li>
+      <li>
+        <a href="{{@site.url}}/signup">Subscribe</a>
+      </li>
       {{/if}}
-    {{/unless}}
+    {{/if}}
 
 
     {{! Social media links }}
