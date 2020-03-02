@@ -4,11 +4,29 @@
 </div>
 
 {{! This is the post loop - each post will be output using this markup }}
-{{#foreach posts}}
+{{#foreach posts visibility="all"}}
 <article class="{{post_class}}">
 
     <header class="post-header">
-        <h2 class="post-title typl8-gamma"><a href="{{url}}">{{{title}}}</a></h2>
+        <h2 class="post-title typl8-gamma">
+          <a href="{{url}}">{{{title}}}</a>
+          {{#has visibility="paid"}}
+            {{#if @member.paid}}
+              <i class="gg-lock-unlock"></i>
+              {{else}}
+              <i class="gg-lock"></i>
+            {{/if}}
+          {{/has}}
+          {{#has visibility="member"}}
+            {{#if @member.paid}}
+              <i class="gg-lock-unlock"></i>
+              {{else if @member}}
+              <i class="gg-lock-unlock"></i>
+              {{else}}
+              <i class="gg-lock"></i>
+            {{/if}}
+          {{/has}}
+        </h2>
     </header>
 
     {{#if feature_image}}
