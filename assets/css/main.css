@@ -1945,6 +1945,15 @@ top: -35px;
     width: 100vw;
   }
 
+  .checkout-box {
+    display: block;
+  }
+
+  .checkout-plan ul {
+    text-align: center;
+    margin-left: 0;
+  }
+
 }
 
 
