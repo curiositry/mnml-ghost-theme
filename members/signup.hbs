@@ -1,0 +1,70 @@
+{{!< ../default}}
+{{> main-header}}
+<main class="center-text">
+  <h2>Signup to {{@site.title}}</h2>
+  <p>{{@site.description}}</p>
+
+  {{#if @member.paid}}
+
+    {{!-- Logged in, paying member: Redirect home --}}
+    <script>window.location = '{{@site.url}}';</script>
+
+  {{else if @member}}
+
+  {{!-- Logged in, not paying: Check out --}}
+  <div class="checkout-form">
+      <h1 class="checkout-title">Choose your subscription</h1>
+      <p>Unlock full access to {{@site.title}} and see the entire library of members-only content & updates</p>
+      <div class="checkout-box">
+          <div class="checkout-plan">
+              <header class="checkout-plan-header">
+                  <h3>Monthly</h3>
+                  <span>$</span><strong>{{@price.monthly}}</strong> / month
+              </header>
+              <div class="checkout-plan-content">
+                  <ul>
+                      <li>Full access to all private posts</li>
+                      <li>Regular updates with new content</li>
+                      <li>Support independent publishing</li>
+                      <li>Simple, secure card payment</li>
+                  </ul>
+                  <a class="button primary fit" href="javascript:void(0)" data-members-plan="Monthly">Choose this plan</a>
+              </div>
+          </div>
+          <div class="checkout-plan">
+              <header class="checkout-plan-header">
+                  <h3>Yearly</h3>
+                  <span>$</span><strong>{{@price.yearly}}</strong> / year
+              </header>
+              <div class="checkout-plan-content">
+                  <ul>
+                      <li>Full access to all private posts</li>
+                      <li>Regular updates with new content</li>
+                      <li>Support independent publishing</li>
+                      <li>Simple, secure card payment</li>
+                      <li>One easy payment instead of 12!</li>
+                  </ul>
+                  <a class="button primary fit" href="javascript:void(0)" data-members-plan="Yearly">Choose this plan</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  {{else}}
+  <form data-members-form="signin">
+    <input data-members-email type="email" required="true" placeholder="Type your email..."/>
+    <button type="submit"><span class="button-text">Continue</span></button>
+  </form>
+
+  <small class="message-success">
+    Great! Check your inbox and click the link to confirm your subscription.
+  </small>
+
+  <small class="message-error">
+    Please enter a valid email address!
+  </small>
+
+  <small data-members-error></small>
+
+  {{/if}}
+</main>

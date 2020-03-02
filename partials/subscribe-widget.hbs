@@ -1,0 +1,47 @@
+{{#if @labs.members}}
+  {{#if @member}}
+    <section class="email-optin-widget center-text">
+      <small style="color: grey;">
+        Thanks for being a <em>{{@site.title}}</em> subscriber,
+        {{#if @member.name}}
+            {{@member.name}}
+          {{else}}
+            {{@member.email}}
+        {{/if}}!
+        <a href="#!" data-members-signout>[Sign out]</a>
+      </small>
+    </section>
+  {{else}}
+      <section class="email-optin-widget center-text">
+        <div  style="margin-bottom: 0.5rem;"><small>Like what you see? Get new posts by email:</small></div>
+
+        <form data-members-form="subscribe">
+          <input data-members-email placeholder="Your email address" type="email" required="true"/>
+          <button type="submit"><span>Subscribe</span></button>
+        </form>
+
+        <small style="color: grey">
+          <small>or by <a href="{{@site.url}}/rss">RSS</a>, if you’re that old-school</small>
+        </small>
+
+        <small class="message-success">
+          Great! Check your inbox and click the link to confirm your subscription.
+        </small>
+
+        <small class="message-error">
+          Please enter a valid email address!
+        </small>
+
+        <small data-members-error></small>
+
+      </section>
+    {{/if}}
+  {{else}}
+    {{#if @labs.subscribers}}
+      <section class="email-optin-widget center-text">
+        <div  style="margin-bottom: 0.5rem;"><small>Like what you see? Get new posts by email:</small></div>
+        {{subscribe_form placeholder="Your email address"}}
+        <small style="color: grey;"><small>or by <a href="{{@site.url}}/rss">RSS<a/>, if you’re that old-school</small></small>
+      </section>
+    {{/if}}
+{{/if}}

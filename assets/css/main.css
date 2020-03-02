@@ -1065,6 +1065,62 @@ aside.note:before{
 }
 
 
+/* MEMBERSHIP STYLES */
+/* ================= */
+.message-success,
+.message-error {
+  display: none;
+  margin-top: 1rem;
+}
+
+.message-error,
+[data-members-error] {
+  color: red;
+}
+
+.message-success {
+  color: green;
+}
+
+.loading button span,
+.error button span,
+.success button span {
+  display: none;
+}
+
+.loading button::after {
+  content: "Loading...";
+}
+
+.error button::after {
+  content: "Error :(";
+}
+
+.success button::after {
+  content: "Success :)";
+}
+
+.success ~ .message-success,
+.invalid ~ .message-error,
+.error ~ .message-error {
+  display: block;
+}
+
+.subscriber-detail-content {
+  font-weight: bold;
+}
+
+.price-per-month, .price-per-year {
+  display: none;
+}
+
+.plan-is-by-month .price-per-month,
+.plan-is-by-year .price-per-year {
+  display: inline;
+}
+/* END MEMBERSHIP STYLES */
+
+
 /* ==========================================================================
    5. Single Post - When you click on an individual post
    ========================================================================== */
@@ -1296,7 +1352,7 @@ figure.kg-embed-card * {
   margin: 0 6px;
 }
 
-.kg-bookmark-card { /* This is required for theme validation */ } 
+.kg-bookmark-card { /* This is required for theme validation */ }
 .kg-bookmark-publisher { /* This is required for theme validation */ }
 
 /* The author credit area after the post */
