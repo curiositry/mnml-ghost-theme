@@ -80,7 +80,78 @@ code[class*=language-],pre[class*=language-]{color:#000;text-shadow:0 1px #fff;f
   content: "\e009";
 }
 
+/* An experiment with css.gg CSS only icons... */
 
+.gg-lock {
+    color: slategray;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    transform: scale(var(--ggs,1));
+    width: 12px;
+    height: 11px;
+    border: 2px solid;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom: transparent;
+    margin-top: -12px;
+    bottom: 0.6rem;
+    left: 0.5rem;
+}
+.gg-lock::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 16px;
+    height: 10px;
+    border-radius: 2px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    left: -4px;
+    top: 9px
+}
+
+.gg-lock-unlock {
+    color: slategray;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    transform: scale(var(--ggs,1));
+    width: 12px;
+    height: 6px;
+    border: 2px solid;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border-bottom: transparent;
+    margin-top: -18px;
+    margin-left: -2px;
+    bottom: 1rem;
+    left: 0.5rem;
+}
+.gg-lock-unlock::after,
+.gg-lock-unlock::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+}
+.gg-lock-unlock::after {
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    width: 16px;
+    height: 10px;
+    border-radius: 2px;
+    left: -4px;
+    top: 10px
+}
+.gg-lock-unlock::before {
+    width: 2px;
+    height: 6px;
+    background: currentColor;
+    left: -2px;
+    top: 4px;
+}
 
 
 
