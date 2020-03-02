@@ -1,6 +1,8 @@
 {{!< ../default}}
 
-{{> main-header}}
+{{> content-header}}
+
+<main class="inner center-text">
 
 {{#if @member.paid}}
 
@@ -75,3 +77,5 @@
   <script>window.location = '{{@site.url}}/signin/';</script>
 
 {{/if}}
+
+</main>

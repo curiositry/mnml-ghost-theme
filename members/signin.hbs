@@ -1,6 +1,6 @@
 {{!< ../default}}
-{{>main-header}}
-<main class="center-text">
+{{> content-header}}
+<main class="inner center-text">
   <h2>Welcome back!</h2>
   <p>Sign into your account again for full access</p>
   {{#if @member}}
@@ -14,7 +14,7 @@
     <input data-members-email type="email" required="true" placeholder="Your email address"/>
     <button type="submit"><span class="button-text">Send login link</span></button>
   </form>
-    
+
   <small class="message-success">
     Great! Check your inbox and click the link to confirm your subscription.
   </small>
