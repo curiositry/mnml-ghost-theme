@@ -759,6 +759,11 @@ aside.note:before{
   text-decoration: none;
 }
 
+nav button {
+  padding: 0.25rem 0.5rem !important;
+  font-size: 90% !important;
+}
+
 
 /* The details of your blog. Defined in ghost/settings/ */
 .page-title {
