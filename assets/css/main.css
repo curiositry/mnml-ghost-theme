@@ -1127,6 +1127,22 @@ nav button {
 .plan-is-by-year .price-per-year {
   display: inline;
 }
+
+.checkout-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.checkout-plan {
+  margin: 0 !important;
+}
+
+.checkout-plan ul {
+  text-align: left;
+  margin-left: 2.5rem;
+}
+
+
 /* END MEMBERSHIP STYLES */
 
 
