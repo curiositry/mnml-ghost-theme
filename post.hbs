@@ -21,8 +21,25 @@
         </header>
 
         <section class="post-content">
+          {{#if access}}
             {{content}}
+          {{else}}
+            <p>You don't have access to this post on <strong>{{@site.title}}</strong> at the moment, but if you upgrade your account you'll be able to see the whole thing, as well as all the other posts in the archive! Subscribing only takes a few seconds and will give you immediate access.</p>
+
+            <aside class="center-text full-width">
+
+            {{#if @member}}
+                <h2 style="margin-top: 1rem;">This post is for paying subscribers only</h2>
+              {{else}}
+                <h2 style="margin-top: 1rem;">This post is for subscribers only</h2>
+            {{/if}}
+            <a class="btn" href="/signup/">Subscribe now</a>
+            <p style="margin-top: 1rem;">Already have an account? <a href="/signin/">Sign in</a></p>
+            </aside>
+          {{/if}}
         </section>
+
+        <br clear="all">
 
         <footer class="post-footer">
 
