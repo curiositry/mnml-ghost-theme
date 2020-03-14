@@ -1906,6 +1906,14 @@ top: -35px;
   .main-nav h3{
   }
 
+  .nav {
+    font-size: 75%;
+  }
+
+  .menu .nav-member-links {
+    display: none;
+  }
+
   #menu-trigger:checked ~ label{
     /*max-width: 20px;*/
     /*max-height: 20px;*/
@@ -2025,6 +2033,10 @@ top: -35px;
     display: none;
     height: auto;
     padding-top: 1.65rem;
+  }
+
+  .menu .nav-member-links {
+    display: block;
   }
 
   .menu:before{
