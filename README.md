@@ -16,6 +16,7 @@ If you have a question or have found a bug please **open an issue** and I’ll t
 
 - Compatible with the latest version of Ghost
 - Totally responsive
+- Paid membership support (*note: don’t forget to upload the included `routes.yaml` file*)
 - Perfect readability — MNML features a type-scale, responsive typography, and carefully set line length for the best reading experience.
 - Great Typography
   - Typeset in Source Serif Pro, Source Sans Pro, and Alegreya
