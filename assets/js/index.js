@@ -59,19 +59,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
   notifications.onclick = function(e){
     notifications.hidden = true;
     notifications.style.display = "none";
-
   }
   if (action == 'subscribe') {
     document.body.classList.add("subscribe-success");
     notifications.innerHTML = "You've successfully subscribed to " + siteTitle;
   }
   if (action == 'signup') {
-    notifications.innerHTML = "Great! Next, complete checkout for full access to {{@site.title}}";
     window.location = '{{@site.url}}/signup/?action=checkout';
   }
   if (action == 'checkout') {
     document.body.classList.add("signup-success");
-    notifications.innerHTML = "Success! Your account is fully activated, you now have access to all content.";
+    notifications.innerHTML = "Great! Next, complete checkout for full access to " + siteTitle;
   }
   if (action == 'signin') {
     document.body.classList.add("signin-success");
@@ -79,6 +77,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
   if (stripe == 'success') {
     document.body.classList.add("checkout-success");
+    notifications.innerHTML = "Success! Your account is fully activated, you now have access to all content.";
   }
   if (stripe == 'billing-update-success') {
     document.body.classList.add("billing-success");
@@ -88,12 +87,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
     document.body.classList.add("billing-cancel");
     notifications.innerHTML = "Billing info update failed."
   }
-
   if (action || stripe) {
     notifications.hidden = false;
     notifications.style.display = "block";
     URLSearchParams.delete(action);
     URLSearchParams.delete(stripe);
   }
-
 });
