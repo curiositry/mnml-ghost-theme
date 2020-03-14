@@ -59,6 +59,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
   notifications.onclick = function(e){
     notifications.hidden = true;
     notifications.style.display = "none";
+    var uri = window.location.toString();
+    if (uri.indexOf("?") > 0) {
+      var clean_uri = uri.substring(0, uri.indexOf("?"));
+      window.history.replaceState({}, document.title, clean_uri);
+    }
   }
   if (action == 'subscribe') {
     document.body.classList.add("subscribe-success");
