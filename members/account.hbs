@@ -8,7 +8,12 @@
 
   {{!-- Logged in, paying member: Show account info --}}
   <div class="subscriber-box center-text">
-    <h1 class="subscriber-box-title">Your account</h1>
+
+    {{#if @member.avatar_image}}
+        <img style="max-width: 10rem;" src="{{@member.avatar_image}}" />
+    {{/if}}
+
+    <h1 style="padding: 2rem;" class="account-box-title">Your account</h1>
 
     {{#foreach @member.subscriptions}}
       <div class="subscription">
@@ -67,7 +72,14 @@
 
   {{!-- Logged in, not paying: Link to checkout --}}
   <div class="account-box center-text">
-    <h2 class="account-box-title">Currently, you're not a subscriber</h2>
+
+    {{#if @member.avatar_image}}
+      <img style="max-width: 10rem;" src="{{@member.avatar_image}}" />
+    {{/if}}
+    <br>
+    <h2 style="padding: 2rem;" class="account-box-title">Your account</h2>
+    <h4 class="account-box-subtitle">Currently, you're not a subscriber</h4>
+
     <p>Hey there! <strong>{{@member.email}}</strong> is subscribed to free updates from {{@site.title}}, but doesn't have a paid subscription to unlock full access.</p>
     <div class="authbox-signup">
       <a class="btn primary" href="/signup/">
