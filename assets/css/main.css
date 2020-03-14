@@ -1072,6 +1072,22 @@ nav button {
 
 /* MEMBERSHIP STYLES */
 /* ================= */
+.notification-area {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 850px;
+  text-align: center;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  background-color: #99ea02;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.billing-cancel .notification-area {
+  background-color: #ccc;
+}
+
 .message-success,
 .message-error {
   display: none;
