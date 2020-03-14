@@ -1,40 +1,40 @@
 <ul class="nav">
-    {{#foreach navigation}}
-    <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation">
-      <a href="{{url absolute="true"}}">{{label}}</a>
-    </li>
-    {{/foreach}}
+  {{#foreach navigation}}
+  <li class="{{link_class for=(url) class=(concat "nav-" slug)}} {{#if current}} nav-current{{/if}}" role="presentation">
+    <a href="{{url absolute="true"}}">{{label}}</a>
+  </li>
+  {{/foreach}}
 
-    {{! Membership links }}
-    {{#if @labs.members}}
-      {{#if @member}}
-      <li>
+  {{! Membership links }}
+  {{#if @labs.members}}
+    {{#if @member}}
+      <li class="nav-member-links nav-account" role="presentation">
         <a href="{{@site.url}}/account">Account</a>
       </li>
-      <li>
+      <li class="nav-member-links nav-signout" role="presentation">
         <button role="link" data-members-signout>Sign out</button>
       </li>
-      {{else}}
-      <li>
+    {{else}}
+      <li class="nav-member-links nav-signin" role="presentation">
         <a href="{{@site.url}}/signin">Log in</a>
       </li>
-      <li>
+      <li class="nav-member-links nav-subscribe" role="presentation">
         <a href="{{@site.url}}/signup">Subscribe</a>
       </li>
-      {{/if}}
     {{/if}}
+  {{/if}}
 
 
-    {{! Social media links }}
-    {{#if @site.facebook}}
+  {{! Social media links }}
+  {{#if @site.facebook}}
     <span class="meta-spacer"></span>
-      <li class="nav-{{facebook_url}}{{#if current}} nav-current{{/if}}" role="presentation">
-        <a href="{{facebook_url}}"><span class="icon-facebook"></span></a>
-      </li>
-    {{/if}}
-    {{#if @site.twitter}}
-      <li class="nav-{{twitter_url}}{{#if current}} nav-current{{/if}}" role="presentation">
-        <a href="{{twitter_url}}"><span class="icon-twitter"></span></a>
-      </li>
-    {{/if}}
+    <li class="{{link_class for=(url) class=(concat "nav-" facebook_url)}}{{#if current}} nav-current{{/if}}" role="presentation">
+      <a href="{{facebook_url}}"><span class="icon-facebook"></span></a>
+    </li>
+  {{/if}}
+  {{#if @site.twitter}}
+    <li class="{{link_class for=(url) class=(concat "nav-" twitter_url)}}{{#if current}} nav-current{{/if}}" role="presentation">
+      <a href="{{twitter_url}}"><span class="icon-twitter"></span></a>
+    </li>
+  {{/if}}
 </ul>
