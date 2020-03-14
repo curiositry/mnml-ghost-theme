@@ -4,7 +4,7 @@
   "demo": "http://mnml.herokuapp.com",
   "version": "5.0.0",
   "engines": {
-      "ghost": ">=3.8.0",
+      "ghost": ">=3.11.0",
       "ghost-api": "v3"
   },
   "author": {
