@@ -30,8 +30,7 @@
           <div class="subscriber-detail">
             <label class="subscriber-detail-label">Your plan: </label>
             <span class="subscriber-detail-content plan-is-by-{{plan.interval}}">
-              <span class="price-per-month">${{@price.monthly}}/month</span>
-              <span class="price-per-year">${{@price.yearly}}/year</span>
+              {{plan.currency_symbol}}{{price plan.amount}}/{{plan.interval}}
             </span>
           </div>
 
