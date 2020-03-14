@@ -52,7 +52,13 @@
 
         </div>
         <br>
+        <a style="transform: scale(80%)" class="btn" href="javascript:"
+          data-members-edit-billing
+          data-members-success="/account/?stripe=billing-update-success"
+          data-members-cancel="/account/?stripe=billing-update-cancel">Edit billing info</a>
+        <br>
         {{cancel_link}}
+        <br><br>
       </div>
     {{/foreach}}
   </div>
