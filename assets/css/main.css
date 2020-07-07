@@ -161,7 +161,7 @@
      transition: color ease 0.3s;
    }
    a:hover, a:active, a.active{
-     color: orange;
+     color: #4f596a;
    }
    
    em, i {
@@ -305,7 +305,7 @@
      box-sizing: border-box;
      margin: 1.65rem 0 1.65rem -1.8rem;
      padding: 0 0 0 1.65rem;
-     border-left: orange 3px double;
+     border-left: #4f596a 0.4em solid;
    }
    
    blockquote p {
@@ -697,7 +697,7 @@
      height: 100%;
      text-align: center;
      padding: 0.825rem 0 0.825rem 0;
-     border-bottom: #e0e4e7 1px solid;
+     border-bottom: #594f5f 3px solid;
      max-width:850px !important;
      padding: relative;
      margin: 0 auto;
@@ -908,7 +908,7 @@
      max-width: 780px;
      margin: 2.457rem auto;
      padding-bottom: 2.457rem;
-     border-bottom: #EBF2F6 1px solid;
+     border-bottom: #594f5f 1px solid;
      word-break: break-word;
      hyphens: auto;
      font-family: "Courier New", Courier, monospace;
@@ -921,16 +921,15 @@
      content: "";
      width: 7px;
      height: 7px;
-     border: #E7EEF2 1px solid;
      position: absolute;
      bottom: -5px;
      left: 50%;
      margin-left: -5px;
-     background: #fdfdfd;
+     background: #5d4f65;
      -webkit-border-radius: 100%;
      -moz-border-radius: 100%;
      border-radius: 100%;
-     box-shadow: #fdfdfd 0 0 0 5px;
+     box-shadow: #5d4f65 0 0 0 5px;
    }
    
    .post-title {
@@ -1405,8 +1404,8 @@
    .post-footer {
      position: relative;
      margin: 4rem 0 0 0;
-     padding: 2.457rem 0 0 0;
-     border-top: #EBF2F6 1px solid;
+     padding: 2.457rem 0 0.5rem 0;
+     border-top: #594f5f 1px solid;
    }
    
    .post-footer h4 {
@@ -1511,7 +1510,7 @@
    
    .author-profile {
      padding: 0 15px 15px 15px;
-     border-bottom: #EBF2F6 1px solid;
+     border-bottom: #594f5f 1px solid;
      text-align: center;
    }
    
@@ -1678,7 +1677,7 @@
      margin: 0 auto;
      max-width:850px;
      display: none;
-     border-bottom: #EBF2F6 1px solid;
+     border-bottom: #594f5f 1px solid;
      padding-bottom: 2.457rem;
    }
    .extra-pagination:after {
@@ -1721,7 +1720,7 @@
      position: relative;
      margin: 2.457rem 0 0 0;
      padding: 1.65rem 0 2.457rem 0;
-     border-top: #EBF2F6 1px solid;
+     border-top: #594f5f 1px solid;
      text-align: center;
      background: #1c212b;
      color: #BBC7CC;
@@ -1761,7 +1760,7 @@
      top: -25px;
      left: 50%;
      margin-left: -25px;
-     border: #EBF2F6 1px solid;
+     border: #594f5f 1px solid;
      text-align: center;
      line-height:1.1rem;
      border-radius: 50px;
@@ -2178,7 +2177,7 @@
        width: 100%;
        margin: 0 0 2.457rem 0;
        padding: 0 0 1.6rem 0;
-       border-bottom: #EBF2F6 1px dashed;
+       border-bottom: #594f5f 1px dashed;
      }
    
      .author-image{
