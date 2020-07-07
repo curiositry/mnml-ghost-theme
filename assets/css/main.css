@@ -585,7 +585,7 @@
      position: relative;
      top: 2.1rem;
      right:4rem;
-     color:orange;
+     color:#4f596a;
      line-height: 0;
    }
    
@@ -653,7 +653,7 @@
    
    .btn:active, .btn:hover,  .btn.active, button:active, button:hover, input[type=button]:active, input[type="button"]:hover{
      color:white;
-     background: orange;
+     background: #4f596a;
      box-shadow: 0 0 10px -3px #dd4814 inset;
      border:1px solid #dd4814;
    }
@@ -750,7 +750,7 @@
    }
    
    .main-nav--content .back-arrow{
-     color:orange;
+     color:#4f596a;
      font-weight:900;
    }
    
@@ -1465,7 +1465,7 @@
    }
    
    .share a:hover{
-     color:orange;
+     color:#4f596a;
    }
    
    .icon-google-plus{
@@ -1492,11 +1492,11 @@
    .icon-twitter:hover,
    .share .icon-facebook:hover,
    .icon-facebook:hover {
-     color: orange;
+     color: #4f596a;
    }
    
    .icon-feed {
-     color: orange;
+     color: #4f596a;
    }
    
    
@@ -1670,7 +1670,7 @@
    .older-posts:hover,
    .newer-posts:hover {
      color: #dd4814;
-     border-color: orange;
+     border-color: #4f596a;
    }
    
    .extra-pagination {
@@ -1745,7 +1745,7 @@
    }
    
    .site-footer a:hover{
-     color: orange;
+     color: #4f596a;
    }
    
    .site-footer__attribution {
