@@ -164,15 +164,6 @@
      color: #4f596a;
    }
    
-   em, i {
-   /*
-     Yeah, this is a hack.
-     Real italics are coming to Source Serif Pro, but I couldn’t wait to use it.
-   */
-     font-family: "Alegreya";
-     font-style: italic;
-   }
-   
    strong, bold, b{
      font-weight: 700;
    }
@@ -770,25 +761,23 @@
      text-align:left;
      display:inline-block;
      float:left;
-     color: #444;
      text-transform: none;
      font-weight: 400;
      font-family: "Source Serif Pro", Georgia, serif;
-     padding: 0.55rem 1.65rem 0rem 0;
-     padding-right: 50px; /* Hack to prevent menu icon from overlapping really long titles */
+     padding: 0.3rem 1.65rem 0rem 0;
      margin-bottom: 0;
      box-sizing: border-box;
    }
-   
+
    .page-description {
      text-transform: none;
-     font-family: "Alegreya", Georgia, serif;
+     font-family: monospace, "Source Serif Pro", Georgia, serif;
      font-style: italic;
      font-weight: 200;
      color:slategray;
      display:inline-block;
      float:left;
-     padding:1.1rem .55rem 0rem 0;
+     padding: 0.7em .55rem 0rem 0;
    }
    
    .tag-template .page-title,
