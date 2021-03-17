@@ -6,22 +6,20 @@
   {{/foreach}}
 
   {{! Membership links }}
-  {{#if @labs.members}}
-    {{#if @member}}
-      <li class="nav-member-links nav-account" role="presentation">
-        <a href="{{@site.url}}/account">Account</a>
-      </li>
-      <li class="nav-member-links nav-signout" role="presentation">
-        <button role="link" data-members-signout>Sign out</button>
-      </li>
-    {{else}}
-      <li class="nav-member-links nav-signin" role="presentation">
-        <a href="{{@site.url}}/signin">Log in</a>
-      </li>
-      <li class="nav-member-links nav-subscribe" role="presentation">
-        <a href="{{@site.url}}/signup">Subscribe</a>
-      </li>
-    {{/if}}
+  {{#if @member}}
+    <li class="nav-member-links nav-account" role="presentation">
+      <a href="{{@site.url}}/account">Account</a>
+    </li>
+    <li class="nav-member-links nav-signout" role="presentation">
+      <button role="link" data-members-signout>Sign out</button>
+    </li>
+  {{else}}
+    <li class="nav-member-links nav-signin" role="presentation">
+      <a href="{{@site.url}}/signin">Log in</a>
+    </li>
+    <li class="nav-member-links nav-subscribe" role="presentation">
+      <a href="{{@site.url}}/signup">Subscribe</a>
+    </li>
   {{/if}}
 
 
