@@ -14,12 +14,14 @@
       <button role="link" data-members-signout>Sign out</button>
     </li>
   {{else}}
-    <li class="nav-member-links nav-signin" role="presentation">
-      <a href="{{@site.url}}/signin">Log in</a>
-    </li>
-    <li class="nav-member-links nav-subscribe" role="presentation">
-      <a href="{{@site.url}}/signup">Subscribe</a>
-    </li>
+    {{#if @labs.members}}
+      <li class="nav-member-links nav-signin" role="presentation">
+        <a href="{{@site.url}}/signin">Log in</a>
+      </li>
+      <li class="nav-member-links nav-subscribe" role="presentation">
+        <a href="{{@site.url}}/signup">Subscribe</a>
+      </li>
+    {{/if}}
   {{/if}}
 
 
