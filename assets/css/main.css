@@ -1471,12 +1471,8 @@ figure.kg-embed-card * {
   color:orange;
 }
 
-.icon-google-plus{
-  color: #d34836;
-}
-
 .icon-linkedin{
-  color: #0077B5;
+  color: rgb(10, 102, 194);
 }
 
 .share .icon-twitter,
