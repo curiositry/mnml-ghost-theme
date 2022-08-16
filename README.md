@@ -31,7 +31,7 @@ If you have a question or have found a bug please **open an issue** and I’ll t
 - Elegant print stylesheet
 - Robots.txt improves SEO by removing tag listings from search engines so your content is more prominent
 - Responsive, accessible menu for static pages (or anything else) that stays out of the way [NEW!]
-- Comments powered by Disqus, loaded asynchronously so they don’t slow down your site. [NEW!]
+- Ghost comments [NEW!], or comments powered by Disqus (loaded asynchronously so they don’t slow down your site). 
 - Blazing fast
   <!-- - ~~Thumbnails are resized automatically with Firesize.~~ Firesize shut down unexpectedly, and I am still looking for a replacement. -->
   - Non-essential scripts and styles are loaded asynchronously or deferred
