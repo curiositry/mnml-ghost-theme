@@ -9,7 +9,7 @@ Mnml is a beautiful, responsive, content-focused theme with great typography. Th
 If you have a question or have found a bug please **open an issue** and I’ll try to help as soon as possible; if you like this theme, or use it on your blog, make me happy by **starring the project**, or spreading the word!
 
 ### See mnml in the wild!
-- [mnml.herokuapp.com](http://mnml.herokuapp.com) Site for the theme. Runs latest official *release* or newer
+- [mnml.curiositry.com](http://mnml.curiositry.com) — demo site for the theme. 
 - Check out the [*MNML in use* wiki page](https://github.com/curiositry/mnml-ghost-theme/wiki/The-Mnml-Ghost-Theme-in-Use), which lists a few dozen blogs I’ve spotted that sport the theme.
 
 ### Features:
