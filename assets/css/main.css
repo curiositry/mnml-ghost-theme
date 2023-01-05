@@ -157,11 +157,11 @@ h4{
 }
 
 a {
-  color: #dd4814;
+  color: #2980B9;
   transition: color ease 0.3s;
 }
 a:hover, a:active, a.active{
-  color: orange;
+  color: #E74C3C;
 }
 
 em, i {
@@ -243,7 +243,7 @@ input, textarea{
 }
 
 input:focus, textarea:focus{
-  border:2px solid #dd4814;
+  border:2px solid #2980B9;
 }
 
 li {
@@ -305,7 +305,7 @@ blockquote {
   box-sizing: border-box;
   margin: 1.65rem 0 1.65rem -1.8rem;
   padding: 0 0 0 1.65rem;
-  border-left: orange 3px double;
+  border-left: #E74C3C 3px double;
 }
 
 blockquote p {
@@ -592,7 +592,7 @@ table.plain tbody > tr:nth-child(odd) > th {
   position: relative;
   top: 2.1rem;
   right:4rem;
-  color:orange;
+  color:#E74C3C;
   line-height: 0;
 }
 
@@ -636,14 +636,14 @@ aside.note:before{
 
 .btn, button, input[type="button"]{
   color:white;
-  background-color: #dd4814;
-  background: -moz-linear-gradient(top, #dd4814 0%, #c23202 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, #dd4814), color-stop(100%, #c23202));
-  background: -webkit-linear-gradient(top, #dd4814 0%, #c23202 100%);
-  background: -o-linear-gradient(top, #dd4814 0%, #c23202 100%);
-  background: -ms-linear-gradient(top, #dd4814 0%, #c23202 100%);
-  background: linear-gradient(to bottom, #dd4814 0%, #c23202 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd4814', endColorstr='#c23202', GradientType=0 );
+  background-color: #2980B9;
+  background: -moz-linear-gradient(top, #2980B9 0%, #3498DB 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #2980B9), color-stop(100%, #3498DB));
+  background: -webkit-linear-gradient(top, #2980B9 0%, #3498DB 100%);
+  background: -o-linear-gradient(top, #2980B9 0%, #3498DB 100%);
+  background: -ms-linear-gradient(top, #2980B9 0%, #3498DB 100%);
+  background: linear-gradient(to bottom, #2980B9 0%, #3498DB 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2980B9', endColorstr='#3498DB', GradientType=0 );
   padding: .55rem 1.1rem;
   text-indent: 0;
   text-decoration: none;
@@ -660,9 +660,9 @@ aside.note:before{
 
 .btn:active, .btn:hover,  .btn.active, button:active, button:hover, input[type=button]:active, input[type="button"]:hover{
   color:white;
-  background: orange;
-  box-shadow: 0 0 10px -3px #dd4814 inset;
-  border:1px solid #dd4814;
+  background: #E74C3C;
+  box-shadow: 0 0 10px -3px #2980B9 inset;
+  border:1px solid #2980B9;
 }
 
 .btn--full-width,
@@ -757,7 +757,7 @@ aside.note:before{
 }
 
 .main-nav--content .back-arrow{
-  color:orange;
+  color:#E74C3C;
   font-weight:900;
 }
 
@@ -1270,11 +1270,11 @@ figure.kg-embed-card * {
 
 .kg-bookmark-title {
   font-weight: 700;
-  color: #dd4814;
+  color: #2980B9;
 }
 
 .kg-bookmark-container:hover .kg-bookmark-title {
-  color: orange;
+  color: #E74C3C;
 }
 
 .kg-bookmark-description,
@@ -1380,7 +1380,7 @@ figure.kg-embed-card * {
 }
 
 .share a:hover{
-  color:orange;
+  color:#E74C3C;
 }
 
 .icon-linkedin{
@@ -1403,11 +1403,11 @@ figure.kg-embed-card * {
 .icon-twitter:hover,
 .share .icon-facebook:hover,
 .icon-facebook:hover {
-  color: orange;
+  color: #E74C3C;
 }
 
 .icon-feed {
-  color: orange;
+  color: #E74C3C;
 }
 
 
@@ -1579,8 +1579,8 @@ figure.kg-embed-card * {
 
 .older-posts:hover,
 .newer-posts:hover {
-  color: #dd4814;
-  border-color: orange;
+  color: #2980B9;
+  border-color: #E74C3C;
 }
 
 .extra-pagination {
@@ -1655,7 +1655,7 @@ figure.kg-embed-card * {
 }
 
 .site-footer a:hover{
-  color: orange;
+  color: #E74C3C;
 }
 
 .site-footer__attribution {
@@ -1680,7 +1680,7 @@ figure.kg-embed-card * {
 
 /* The RSS icon, inserted via icon font */
 .subscribe:before {
-  color: orange;
+  color: #E74C3C;
   font-size: 24px;
   position: absolute;
   top: 13px;
@@ -1696,7 +1696,7 @@ figure.kg-embed-card * {
 }
 
 .subscribe:hover:before {
-  color: #dd4814;
+  color: #2980B9;
 }
 
 /* CSS tooltip saying "Subscribe!" - initially hidden */
