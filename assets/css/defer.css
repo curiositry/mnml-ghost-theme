@@ -58,9 +58,6 @@ code[class*=language-],pre[class*=language-]{color:#000;background:0 0;text-shad
 .icon-twitter:before {
     content: "\e002";
 }
-.icon-google-plus:before {
-    content: "\e003";
-}
 .icon-facebook:before {
     content: "\e004";
 }
