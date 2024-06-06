@@ -10,13 +10,14 @@
     <article class="{{post_class}}">
     {{! Everything inside the #post tags pulls data from the post }}
     {{#post}}
-
-        <header class="post-header">
-            <h1 class="post-title typl8-gamma">{{title}}</h1>
-            <section class="post-meta">
-                <time class="post-date hidden" datetime="{{date format='YYYY-MM-DD'}}">Published on {{date format="MMMM Do YYYY"}}</time>
-            </section>
-        </header>
+        {{#match @page.show_title_and_feature_image}}
+            <header class="post-header">
+                <h1 class="post-title typl8-gamma">{{title}}</h1>
+                <section class="post-meta">
+                    <time class="post-date hidden" datetime="{{date format='YYYY-MM-DD'}}">Published on {{date format="MMMM Do YYYY"}}</time>
+                </section>
+            </header>
+        {{/match}}
 
         <section class="post-content">
             {{content}}
