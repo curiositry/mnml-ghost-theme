@@ -109,6 +109,7 @@ html {
 
 body {
     font-family: "Source Serif Pro", Georgia, serif;
+    font-family: var(--gh-font-body);    
     color: #333;
     font-size:21px;
     background: #fdfdfd;
@@ -144,6 +145,7 @@ main-nav a,
 .sans-serif,
 .kg-bookmark-container {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-family: var(--gh-font-heading);  
 }
 
 h4, h5, h6,
@@ -170,6 +172,7 @@ em, i {
   Real italics are coming to Source Serif Pro, but I couldn’t wait to use it.
 */
   font-family: "Alegreya";
+  font-family: var(--gh-font-body);
   font-style: italic;
 }
 
@@ -238,6 +241,7 @@ input, textarea{
   border:2px solid slategray;
   padding:.55rem;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: var(--gh-font-body);
   margin: .55rem auto;
   box-sizing: border-box;
 }
@@ -312,6 +316,7 @@ blockquote p {
   margin: 0;
   font-style: italic;
   font-family: "Alegreya", georgia, serif;
+  font-family: var(--gh-font-body);
 }
 
 blockquote small {
@@ -410,6 +415,7 @@ table {
   max-width: 100%;
   background-color: transparent;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: var(--gh-font-body);
 }
 
 table th,
@@ -578,6 +584,7 @@ table.plain tbody > tr:nth-child(odd) > th {
   font-style: italic;
   color:slategray;
   font-family: "Alegreya", Georgia, serif;
+  font-family: var(--gh-font-body);
   -webkit-hyphens: auto;
      -moz-hyphens: auto;
       -ms-hyphens: auto;
@@ -602,6 +609,7 @@ table.plain tbody > tr:nth-child(odd) > th {
   top:3rem;
   right:3.3rem;
   font-family: "Alegreya", Georgia, serif;
+  font-family: var(--gh-font-heading);
 }
 
 .p-quote:after{
@@ -610,6 +618,7 @@ table.plain tbody > tr:nth-child(odd) > th {
 
 aside{
   font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: var(--gh-font-body);
   width: 40%;
   float:right;
   line-height: 1.65;
@@ -624,6 +633,7 @@ aside{
 aside.note:before{
   position: relative;
   font-family: "Source Serif Pro", Georgia, serif;
+  font-family: var(--gh-font-heading);
   font-weight: 900;
   color:  #ccc;
   bottom:.55rem;
@@ -648,6 +658,7 @@ aside.note:before{
   text-indent: 0;
   text-decoration: none;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: var(--gh-font-body);
   text-transform: uppercase;
   margin:.5em auto !important;
   display: inline-block;
@@ -781,6 +792,7 @@ nav button {
   text-transform: none;
   font-weight: 400;
   font-family: "Source Serif Pro", Georgia, serif;
+  font-family: var(--gh-font-heading);
   padding: 0.55rem 1.65rem 0rem 0;
   padding-right: 50px; /* Hack to prevent menu icon from overlapping really long titles */
   margin-bottom: 0;
@@ -790,6 +802,7 @@ nav button {
 .page-description {
   text-transform: none;
   font-family: "Alegreya", Georgia, serif;
+  font-family: var(--gh-font-body);
   font-style: italic;
   font-weight: 200;
   color:slategray;
@@ -853,6 +866,7 @@ nav button {
 
 .menu a{
   font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: var(--gh-font-body);
   color:slategray;
   text-transform: uppercase;
   font-weight: 900;
@@ -871,6 +885,7 @@ nav button {
   cursor: pointer;
   z-index: 4;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: var(--gh-font-body);
   background-color: transparent;
   box-shadow: none;
   background-repeat: no-repeat;
@@ -1002,6 +1017,7 @@ nav button {
 
 .post-meta {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: var(--gh-font-body);
   display: block;
   margin: 0;
   color: lightslategray;
@@ -1151,6 +1167,7 @@ nav button {
 
 figcaption {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: var(--gh-font-body);
   text-align: center;
   margin-top: -12px;
   padding: 0.5rem;
@@ -1978,6 +1995,7 @@ top: -35px;
     content: "{ menu }";
     font-weight: 700;
     font-family: "Alegreya", Georgia, Serif;
+    font-family: var(--gh-font-heading);
     text-align: center;
     color:#ccc;
     font-size:3.3rem;
