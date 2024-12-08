@@ -2,13 +2,13 @@
   "name": "mnml",
   "description": "A minimal, responsive, fast ghost blog theme with great typography. Comes with Disqus comments, syntax highlighting, and KaTeX for mathematics, and more.",
   "demo": "https://mnml.curiositry.com/",
-  "version": "7.0.2",
+  "version": "7.1.2",
   "engines": {
-    "ghost": ">=5.82.11"
+    "ghost": ">=5.104.0"
   },
   "author": {
     "name": "Curiositry",
-    "email": "isa@automathic.org",
+    "email": "info@automathic.org",
     "url": "http://curiositry.com"
   },
   "config": {
