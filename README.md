@@ -1,10 +1,10 @@
-![Ghost Compatability](http://img.shields.io/badge/Compatible%20with%20Ghost-v5%20+-brightgreen.svg)
+![Ghost Compatability](http://img.shields.io/badge/Compatible%20with%20Ghost-v6%20+-brightgreen.svg)
 
 # Mnml — a Typographically Tasteful [Ghost](http://github.com/tryghost/ghost/) Blog Theme
 
 Mnml is a beautiful, responsive, content-focused theme with great typography. The use of a type-scale, responsive typography, and carefully set line-length provide an optimal reading experience. Mnml also features post thumbnails on the homepage, an elegant print stylesheet, code syntax highlighting, and more.
 
-**UPDATE: If you like MNML, check out [Laminim](https://creativemarket.com/Curiositry/1037280-Laminim-%E2%80%94-Ghost-Theme-for-Bloggers), my ghost theme for serious bloggers, and [Weblog](https://creativemarket.com/Curiositry/3192652-weblog-%E2%80%94-old-school-ghost-blog-theme), my new very old-school blog theme. If you would like to support my work developing free Ghost themes, use this referral link to [sign up for Ghost(Pro) hosting for your blog](https://ghost.org/?via=curiositry).**
+**UPDATE: If you like MNML, check out [Laminim](https://creativemarket.com/Curiositry/1037280-Laminim-%E2%80%94-Ghost-Theme-for-Bloggers), my ghost theme for serious bloggers, and [Weblog](https://creativemarket.com/Curiositry/3192652-weblog-%E2%80%94-old-school-ghost-blog-theme), my new very old-school blog theme. If you would like to support my work developing free Ghost themes, use this referral link to [sign up for Ghost(Pro) hosting for your blog](https://ghost.org/?via=curiositry) and use my code `nFFYMCxS` for a 10% discount.**
 
 If you have a question or have found a bug please **open an issue** and I’ll try to help as soon as possible; if you like this theme, or use it on your blog, make me happy by **starring the project**, or spreading the word!
 
