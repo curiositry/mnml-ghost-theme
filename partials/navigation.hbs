@@ -10,12 +10,12 @@
   {{#if @site.facebook}}
     <span class="meta-spacer"></span>
     <li class="{{link_class for=(url) class=(concat "nav-" facebook_url)}}{{#if current}} nav-current{{/if}}" role="presentation">
-      <a href="{{facebook_url}}"><span class="icon-facebook"></span></a>
+      <a href="{{social_url type="facebook"}}"><span class="icon-facebook"></span></a>
     </li>
   {{/if}}
   {{#if @site.twitter}}
     <li class="{{link_class for=(url) class=(concat "nav-" twitter_url)}}{{#if current}} nav-current{{/if}}" role="presentation">
-      <a href="{{twitter_url}}"><span class="icon-twitter"></span></a>
+      <a href="{{social_url type="twitter"}}"><span class="icon-twitter"></span></a>
     </li>
   {{/if}}
   
